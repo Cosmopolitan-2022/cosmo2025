@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Events from "@/components/Events";
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100 text-black">
-      Hello, let&apos;s start
+    <div>
+      <Events/>
     </div>
   );
 }
