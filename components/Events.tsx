@@ -26,14 +26,13 @@ export default function Events() {
       </div>
 
       {/* Intersect decorative images */}
-
-      <div className="absolute bottom-0 right-0 z-0">
+      <div className="absolute bottom-0 right-0 z-0 overflow-visible">
         <Image
           src={intersectImageUrl}
           alt="Decorative element"
           width={150}
           height={150}
-          className="object-cover sm:w-[180px] sm:h-[180px] md:w-[200px] md:h-[200px]"
+          className="object-cover sm:w-[150px] sm:h-[150px] md:w-[180px] md:h-[480px] lg:w-[200px] lg:h-[500px]"
         />
       </div>
 
@@ -50,7 +49,7 @@ export default function Events() {
       </div>
 
       {/* Event cards */}
-      <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12 relative z-10">
+      <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-6 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12 relative z-10">
         {cardEvents.map((event) => (
           <div
             key={event.id}
