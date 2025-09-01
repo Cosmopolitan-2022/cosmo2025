@@ -11,6 +11,8 @@ function Hero() {
       leftSmoke,
       mainText,
       subText,
+      centerMobile,
+      mobileHero,
     },
   } = navbarHeroData;
 
@@ -75,12 +77,14 @@ function Hero() {
  
 
     <div className="flex md:px-40 lg:px-42 xl:px-48 mt-6 w-full">
-      <button className="px-8 py-3 bg-[#e6e6c7] text-[#1c3c2b] rounded-lg md:text-[20px] lg:text-2xl xl:text-3xl shadow font-bold hover:bg-[#d4d4b0] transition">
+      <button className="px-8 py-3 bg-[#e6e6c7] text-[#1c3c2b] rounded-lg md:text-[20px] lg:text-2xl xl:text-xl shadow font-bold hover:bg-[#d4d4b0] transition">
         EXPLORE
       </button>
     </div>
   </div>
     </section>
+
+
   );
 }
 
