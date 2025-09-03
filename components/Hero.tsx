@@ -96,13 +96,20 @@ function Hero() {
   
 
   <button
-    className="mt-20 px-8 py-3 bg-[#e6e6c7]/90 text-[#1c3c2b] 
-               rounded-lg text-xl md:text-[20px] lg:text-2xl xl:text-3xl 
-               
-               shadow font-bold"
-  >
-    EXPLORE
-  </button>
+  className="relative mt-20 px-8 py-3 bg-white text-[#1c3c2b] 
+             rounded-lg text-xl md:text-[20px] lg:text-2xl xl:text-3xl 
+             shadow font-bold md:pr-8 overflow-hidden"
+>
+  <Image
+    src={border1}
+    alt="Button border"
+    fill
+    className="object-cover pointer-events-none"
+  />
+
+  <span className="relative z-10">EXPLORE</span>
+</button>
+
 </div>
 
 </div>
