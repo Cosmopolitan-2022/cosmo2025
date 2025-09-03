@@ -96,13 +96,20 @@ function Hero() {
   
 
   <button
-    className="mt-20 px-8 py-3 bg-[#e6e6c7]/90 text-[#1c3c2b] 
-               rounded-lg text-xl md:text-[20px] lg:text-2xl xl:text-3xl 
-               
-               shadow font-bold"
-  >
-    EXPLORE
-  </button>
+  className="relative mt-20 px-8 py-3 bg-white text-[#1c3c2b] 
+             rounded-lg text-xl md:text-[20px] lg:text-2xl xl:text-3xl 
+             shadow font-bold md:pr-8 overflow-hidden"
+>
+  <Image
+    src={border1}
+    alt="Button border"
+    fill
+    className="object-cover pointer-events-none"
+  />
+
+  <span className="relative z-10">EXPLORE</span>
+</button>
+
 </div>
 
 </div>
@@ -112,14 +119,14 @@ function Hero() {
   
     </section>
 
- <div className="relative w-screen bg-[#03523C] overflow-visible">
+ <div className="relative w-full bg-[#03523C]">
   <Image
           src={backgroundImageUrl}
           alt="Event background"
           fill
           className="object-cover"
         />
-  <div className="relative w-screen md:h-8 lg:h-8 xl:h-10 z-20 bg-amber-200">
+  <div className="relative w-full md:h-8 lg:h-8 xl:h-10 z-20 bg-amber-200">
     <Image
       src={border1}
       alt="Border 1"
@@ -128,7 +135,7 @@ function Hero() {
     />
   </div>
 
-  <div className="relative w-screen md:h-22 lg:h-25 xl:h-30 -mt-10 z-10">
+  <div className="relative w-full md:h-22 lg:h-25 xl:h-30 -mt-10 z-10">
     <Image
       src={border2}
       alt="Border 2"
@@ -137,9 +144,6 @@ function Hero() {
     />
   </div>
 </div>
-
-
-
 
     </>
   );

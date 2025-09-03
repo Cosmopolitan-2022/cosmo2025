@@ -14,14 +14,16 @@ function Navbar() {
 
   return (
     <nav className="flex items-center justify-between px-6 md:px-20 py-4 bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] relative">
-      <Image
-              src={backgroundImageUrl}
-              alt="Event background"
-              fill
-              className="object-cover"
-            />
-      {/* Logo */}
-      <div className="relative h-12 w-28 sm:h-16 sm:w-36 md:h-20 md:w-44 lg:h-24 lg:w-52 xl:h-28 xl:w-60">
+      <div className="absolute inset-0 z-0">
+    <Image
+      src={backgroundImageUrl}
+      alt="Event background"
+      fill
+      className="object-cover"
+      
+    />
+  </div>
+      <div className="relative z-10 h-12 w-28 sm:h-16 sm:w-36 md:h-20 md:w-44 lg:h-24 lg:w-52 xl:h-28 xl:w-60">
         <Image
           src={logo}
           alt="Logo"
@@ -31,7 +33,6 @@ function Navbar() {
         />
       </div>
 
-      {/* Desktop Menu */}
       <ul className="hidden md:flex space-x-10 text-xl lg:text-2xl font-light">
         {tabs.map((tab) => (
           <li key={tab}>
@@ -45,7 +46,6 @@ function Navbar() {
         ))}
       </ul>
 
-      {/* Mobile Hamburger */}
       <button
         className="md:hidden text-[#FFD9A4] hover:text-white transition"
         onClick={() => setIsOpen(!isOpen)}
@@ -53,7 +53,6 @@ function Navbar() {
         {isOpen ? <X size={32} /> : <Menu size={32} />}
       </button>
 
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-[#03523C] flex flex-col items-center space-y-6 py-6 z-50 md:hidden">
           {tabs.map((tab) => (
