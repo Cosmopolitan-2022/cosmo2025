@@ -1,15 +1,14 @@
 import Events from "@/components/Events";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import { backgroundImageUrl } from "@/data/events";
-import Image
- from "next/image";
+import Highlights from "@/components/Highlights";
 export default function Home() {
   return (
     <div>
-          <Navbar />
+      <Navbar />
       <Hero />
       <Events />
+      <Highlights/>
     </div>
   );
 }
