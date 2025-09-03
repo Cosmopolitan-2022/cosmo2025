@@ -1,0 +1,141 @@
+"use client";
+import { useState, useEffect, useCallback } from "react";
+import Image from "next/image";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { left,right } from "@/data/highlights";
+import { carouselImage } from "@/data/highlights";
+import { backgroundDesign,cosmo, centerDesign } from "@/data/highlights";
+
+export default function Highlights() {
+  const [current, setCurrent] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  const prevSlide = () =>
+    setCurrent((prev) => (prev === 0 ? carouselImage.length - 1 : prev - 1));
+  const nextSlide = useCallback(() =>
+    setCurrent((prev) => (prev === carouselImage.length - 1 ? 0 : prev + 1)),
+    []
+  );
+
+  useEffect(() => {
+    if (!isPaused) {
+      const timer = setInterval(() => {
+        nextSlide();
+      }, 2000);
+      return () => clearInterval(timer);
+    }
+  }, [isPaused, nextSlide]);
+
+  const getCardStyle = (index: number) => {
+    const diff = (current - index + carouselImage.length) % carouselImage.length;
+    if (diff === 0) return "scale-100 z-20 shadow-2xl"; 
+    if (diff === 1 || diff === carouselImage.length - 1) return "scale-85 opacity-40 blur-[1px]"; // Side cards
+    return "scale-0 opacity-0"; 
+  };
+
+  return (
+    <div className="relative min-h-[56vh] w-full py-12 sm:py-12 md:py-28 lg:py-40 bg-[#03523C] overflow-hidden">
+      <Image
+        src={backgroundDesign}
+        alt="pattern"
+        fill
+        className="object-cover opacity-50"
+      />
+      <div className="absolute left-0 bottom-0  z-0">
+      <Image
+        src={cosmo}
+        alt="cosmo"
+        width={200}
+        height={150}
+        className="object-cover opacity-70 w-28 sm:w-24 md:w-32 lg:w-44"
+      />
+      </div>
+      <div className="hidden md:flex absolute bottom-[-33px] right-[33px] z-0 w-full sm:w-[200px] sm:inset-0 md:w-[1000px] lg:w-[1400px] items-center justify-center">
+      <Image
+        src={centerDesign}
+        alt="craft"
+        width={1600}
+        height={1600}
+        className="opacity-200 object-contain w-full h-auto"
+      />
+        </div>
+{/*       <div className="absolute flex items-center bottom-[-50px]  justify-center pointer-events-none -z-10 md:hidden">
+        <Image
+            src={centerDesign}
+            alt="craft"
+            width={400}
+            height={400}
+            className="object-contain w-[250px] sm:w-[300px] h-[250px] sm:h-[300px] opacity-80"
+        />
+        </div>
+*/}
+      <h2 className="relative z-10 text-center text-4xl sm:text-5xl md:text-6xl font-['Traditional Civilization Demo'] font-bold text-[#FFD9A4] mb-12 sm:mb-16 md:mb-20 lg:mb-24 tracking-wide">
+        HIGHLIGHTS
+      </h2>
+
+      <div className="relative z-10 flex items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 -mt-8 sm:-mt-12 md:-mt-16 px-2 sm:px-4 max-h-[800px] mx-auto top-[-30px]">
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={prevSlide}
+          className="text-white hover:bg-white/10 hover:text-[#F5E1A4] transition-colors rounded-full w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 flex items-center justify-center bg-white/5"
+        >
+          <Image
+            src={left}
+            alt="left arrow"
+            width={32}
+            height={32}
+            className="w-8 h-8 sm:w-8 sm:h-8 md:w-8 md:h-8 lg:w-8 lg:h-8 opacity-100"
+          />
+        </Button>
+
+        <div 
+          className="flex items-center justify-center w-full sm:w-[800px] md:w-[1200px] lg:w-[1800px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[580px] relative"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
+          {carouselImage.map((item, index) => (
+            <Card
+              key={item.id}
+              className={`transition-all duration-500 absolute w-[250px] sm:w-[300px] md:w-[350px] lg:w-[400px] h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] overflow-hidden bg-transparent border-0
+                ${getCardStyle(index)}
+                ${index === current ? "translate-x-0" : 
+                  index === (current + 1) % carouselImage.length ? "translate-x-[150px] sm:translate-x-[200px] md:translate-x-[250px] lg:translate-x-[300px]" :
+                  index === (current - 1 + carouselImage.length) % carouselImage.length ? "-translate-x-[150px] sm:-translate-x-[200px] md:-translate-x-[250px] lg:-translate-x-[300px]" :
+                  "translate-x-0"}`
+              }
+            >
+              <div className="relative w-full h-full">
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  width={400}
+                  height={400}
+                  className="object-cover rounded-lg"
+                  priority
+                />
+              </div>
+            </Card>
+          ))}
+        </div>
+
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={nextSlide}
+          className="text-white hover:bg-white/10 hover:text-[#F5E1A4] transition-colors rounded-full w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 flex items-center justify-center bg-white/5"
+        >
+          <Image
+            src={right}
+            alt="right arrow"
+            width={32}
+            height={32}
+            className="w-8 h-8 sm:w-8 sm:h-8 md:w-8 md:h-8 lg:w-8 lg:h-8 opacity-100"
+          />
+        </Button>
+      </div>
+    </div>
+  );
+}
