@@ -18,7 +18,11 @@ function Hero() {
 
  return (
   <>
-    <section className="relative pb-[200px] pt-[50px] md:pb-[117px] flex flex-col md:flex-row items-center overflow-visible justify-center bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] w-full">
+    <section className="relative pb-[200px] pt-[50px] md:pb-[117px] flex flex-col md:flex-row items-center overflow-visible justify-center bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] w-full
+    [@media(min-width:350px)_and_(max-width:435px)]:pb-[100px]
+    [@media(min-width:435px)_and_(max-width:520px)]:pb-[40px]
+    [@media(min-width:520px)_and_(max-width:768px)]:pb-[0px]
+    ">
       <Image
               src={backgroundImageUrl}
               alt="Event background"
@@ -97,7 +101,7 @@ function Hero() {
 
   <button
   className="relative mt-20 px-8 py-3 bg-white text-[#1c3c2b] 
-             rounded-lg text-xl md:text-[20px] lg:text-2xl xl:text-3xl 
+             rounded-lg text-2xl md:text-2xl lg:text-2xl xl:text-3xl 
              shadow font-bold md:pr-8 overflow-hidden"
 >
   <Image

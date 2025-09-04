@@ -33,7 +33,7 @@ function Navbar() {
         />
       </div>
 
-      <ul className="hidden md:flex space-x-10 text-xl lg:text-2xl font-light">
+      <ul className="hidden md:pr-6 md:flex space-x-10 text-xl lg:text-2xl font-light">
         {tabs.map((tab) => (
           <li key={tab}>
             <Link
