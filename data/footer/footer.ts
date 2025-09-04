@@ -3,7 +3,7 @@ export const footerData = {
 
     sectionsStyle: [
         {
-            className: " text-[28px] md:text-[20px] lg:text-[24px] xl:text-[28px] font-semibold uppercase text-[#03523C] font-sans",
+            className: " text-[28px] md:text-[20px] lg:text-[24px] xl:text-[28px] font-semibold uppercase text-[#03523C] font-sans font-traditional",
         }
     ],
     cosmo: {

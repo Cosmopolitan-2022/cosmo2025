@@ -6,7 +6,7 @@ import { intersectImageUrl } from "@/data/events";
 
 export default function Events() {
   return (
-    <div className="w-full min-h-screen py-12 sm:py-16 md:py-20 lg:py-32 xl:py-40 bg-[#03523C] relative ">
+    <div className="w-full min-h-screen py-12 sm:py-16 md:py-20 lg:py-32 xl:py-40  bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] relative ">
       <Image
         src={backgroundImageUrl}
         alt="Event background"
@@ -32,34 +32,34 @@ export default function Events() {
           alt="Decorative element"
           width={150}
           height={150}
-          className="object-cover sm:w-[150px] sm:h-[150px] md:w-[180px] md:h-[480px] lg:w-[200px] lg:h-[500px]"
+          className="object-cover sm:w-[9.375rem] sm:h-[9.375rem] md:w-[11.25rem] md:h-[30rem] lg:w-[12.5rem] lg:h-[31.25rem]"
         />
       </div>
 
       {/* Lighting effects */}
-      <div className="absolute top-10 left-5 w-[250px] h-[250px] sm:top-16 sm:left-12 sm:w-[300px] sm:h-[300px] md:top-20 md:left-20 md:w-[400px] md:h-[400px] rounded-full opacity-50 bg-[#FFD9A4] blur-[150px] sm:blur-[200px] md:blur-[250px] z-0"></div>
-      <div className="absolute bottom-16 right-8 w-[200px] h-[200px] sm:bottom-24 sm:right-16 sm:w-[250px] sm:h-[250px] md:bottom-32 md:right-32 md:w-[300px] md:h-[300px] rounded-full opacity-50 bg-[#FFD9A4] blur-[150px] sm:blur-[200px] md:blur-[250px] z-0"></div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] rounded-full opacity-30 bg-[#FFD9A4] blur-[150px] sm:blur-[200px] md:blur-[250px] z-0"></div>
+      <div className="absolute top-10 left-5 w-64 h-64 sm:top-16 sm:left-12 sm:w-80 sm:h-80 md:top-20 md:left-20 md:w-96 md:h-96 rounded-full opacity-50 bg-[#FFD9A4] blur-[9.375rem] sm:blur-[12.5rem] md:blur-[15.625rem] z-0"></div>
+      <div className="absolute bottom-16 right-8 w-52 h-52 sm:bottom-24 sm:right-16 sm:w-64 sm:h-64 md:bottom-32 md:right-32 md:w-80 md:h-80 rounded-full opacity-50 bg-[#FFD9A4] blur-[9.375rem] sm:blur-[12.5rem] md:blur-[15.625rem] z-0"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 sm:w-96 sm:h-96 md:w-[31.25rem] md:h-[31.25rem] rounded-full opacity-30 bg-[#FFD9A4] blur-[9.375rem] sm:blur-[12.5rem] md:blur-[15.625rem] z-0"></div>
 
       {/* Title */}
       <div className="flex justify-center relative z-10 mb-8 sm:mb-10 md:mb-16 lg:mb-20">
-        <h1 className="text-[var(--cream,#FFD9A4)] text-center font-['Traditional Civilization Demo'] text-5xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-normal leading-normal tracking-[0.1rem] xs:tracking-[0.15rem] sm:tracking-[0.2rem] md:tracking-[0.3rem] lg:tracking-[0.5rem] xl:tracking-[0.6rem] 2xl:tracking-[0.772rem] px-2 sm:px-4">
+        <h1 className="text-[var(--cream,#FFD9A4)] text-center font-traditional text-5xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-normal leading-normal tracking-[0.1rem] xs:tracking-[0.15rem] sm:tracking-[0.2rem] md:tracking-[0.3rem] lg:tracking-[0.5rem] xl:tracking-[0.6rem] 2xl:tracking-[0.772rem] px-2 sm:px-4">
           Events
         </h1>
       </div>
 
       {/* Event cards */}
-      <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-6 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12 relative z-10">
+      <div className="flex flex-col sm:flex-row sm:flex-wrap md:flex-wrap justify-center gap-4 sm:gap-2 md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-6 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12 relative z-10">
         {cardEvents.map((event) => (
           <div
             key={event.id}
-            className="rounded-[20px] sm:rounded-[30px] md:rounded-[43px] bg-white/10 w-full max-w-[280px] sm:max-w-[320px] md:max-w-[350px] lg:max-w-[380px] xl:max-w-[407px] h-[240px] xs:h-[280px] sm:h-[320px] md:h-[380px] lg:h-[440px] xl:h-[491px] flex-shrink-0 relative mx-auto"
+            className="rounded-xl sm:rounded-2xl md:rounded-[2.6875rem] bg-white/10 border-[3px] border-[#FFD9A4] w-3/4 max-w-xs mx-auto sm:w-auto sm:mx-0 sm:flex-1 sm:min-w-[11.25rem] sm:max-w-[13.75rem] md:max-w-[21.875rem] lg:max-w-[23.75rem] xl:max-w-[25.4375rem] h-80 sm:h-[17.5rem] md:h-[23.75rem] lg:h-[27.5rem] xl:h-[30.6875rem] flex-shrink-0 relative"
           >
             <Image
               src={event.src}
               alt={event.alt}
               fill
-              className="rounded-[20px] sm:rounded-[30px] md:rounded-[43px] object-contain p-2 sm:p-3 md:p-4"
+              className="rounded-xl sm:rounded-2xl md:rounded-[2.6875rem] object-contain p-2 sm:p-2 md:p-4"
             />
           </div>
         ))}

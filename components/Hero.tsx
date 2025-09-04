@@ -18,7 +18,11 @@ function Hero() {
 
  return (
   <>
-    <section className="relative pb-[700px] sm:pb-[180px] pt-[50px] md:pb-[117px] flex flex-col md:flex-row items-center overflow-visible justify-center bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] w-full">
+    <section className="relative pb-[200px] pt-[50px] md:pb-[117px] flex flex-col md:flex-row items-center overflow-visible justify-center bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] w-full
+    [@media(min-width:350px)_and_(max-width:435px)]:pb-[100px]
+    [@media(min-width:435px)_and_(max-width:520px)]:pb-[40px]
+    [@media(min-width:520px)_and_(max-width:768px)]:pb-[0px]
+    ">
       <Image
               src={backgroundImageUrl}
               alt="Event background"
@@ -60,8 +64,8 @@ function Hero() {
       <div className="relative z-30 w-full flex flex-col ml-auto pr-0">
     <div className="w-full text-justify md:pr-8">
       <h1 className="text-5xl md:right-8 md:text-5xl xl:text-9xl font-bold text-[#FFD9A4] text-center">
-        <span className="block font-[Orbitron]">{mainText.split(" ")[0]}</span>
-        <span className="block text-5xl md:text-5xl xl:text-9xl  text-white">
+        <span className="block font-traditional">{mainText.split(" ")[0]}</span>
+        <span className="block text-5xl md:text-5xl xl:text-9xl  text-white font-traditional">
           {mainText.split(" ")[1]}
         </span>
       </h1>
@@ -80,8 +84,8 @@ function Hero() {
   />
 
   <div
-  className="absolute top-0 left-1/2 md:left-auto md:right-10 
-             transform -translate-x-1/2 md:translate-x-0
+  className="absolute top-0  md:left-auto md:right-10 
+             transform  md:translate-x-0
              flex flex-col items-center md:items-end 
              p-6 md:p-8 lg:px-10"
 >
@@ -97,7 +101,7 @@ function Hero() {
 
   <button
   className="relative mt-20 px-8 py-3 bg-white text-[#1c3c2b] 
-             rounded-lg text-xl md:text-[20px] lg:text-2xl xl:text-3xl 
+             rounded-lg text-2xl md:text-2xl lg:text-2xl xl:text-3xl 
              shadow font-bold md:pr-8 overflow-hidden"
 >
   <Image
