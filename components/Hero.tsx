@@ -64,8 +64,8 @@ function Hero() {
       <div className="relative z-30 w-full flex flex-col ml-auto pr-0">
     <div className="w-full text-justify md:pr-8">
       <h1 className="text-5xl md:right-8 md:text-5xl xl:text-9xl font-bold text-[#FFD9A4] text-center">
-        <span className="block font-[Orbitron]">{mainText.split(" ")[0]}</span>
-        <span className="block text-5xl md:text-5xl xl:text-9xl  text-white">
+        <span className="block font-traditional">{mainText.split(" ")[0]}</span>
+        <span className="block text-5xl md:text-5xl xl:text-9xl  text-white font-traditional">
           {mainText.split(" ")[1]}
         </span>
       </h1>

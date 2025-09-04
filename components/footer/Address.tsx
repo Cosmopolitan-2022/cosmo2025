@@ -6,7 +6,7 @@ function Address() {
   const { venue } = footerData;
   const { sectionsStyle: className } = footerData;
   return (
-    <div className="w-full ">
+    <div className="w-full">
       <h1 className={cn(" text-center", className[0].className)}> VENUE</h1>
       <div className=" px-4 flex flex-col  ">
         {venue.map((item) => (

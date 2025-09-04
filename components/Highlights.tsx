@@ -71,7 +71,7 @@ export default function Highlights() {
         />
         </div>
 */}
-      <h2 className="relative z-10 text-center text-4xl sm:text-5xl md:text-6xl font-['Traditional Civilization Demo'] font-bold text-[#FFD9A4] mb-12 sm:mb-16 md:mb-20 lg:mb-24 tracking-wide">
+      <h2 className="relative z-10 text-center text-4xl sm:text-5xl md:text-6xl font-traditional font-bold text-[#FFD9A4] mb-12 sm:mb-16 md:mb-20 lg:mb-24 tracking-wide">
         HIGHLIGHTS
       </h2>
 
