@@ -6,7 +6,7 @@ import { intersectImageUrl } from "@/data/events";
 
 export default function Events() {
   return (
-    <div className="w-full min-h-screen py-12 sm:py-16 md:py-20 lg:py-32 xl:py-40 bg-[#03523C] relative ">
+    <div className="w-full min-h-screen py-12 sm:py-16 md:py-20 lg:py-32 xl:py-40  bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] relative ">
       <Image
         src={backgroundImageUrl}
         alt="Event background"
