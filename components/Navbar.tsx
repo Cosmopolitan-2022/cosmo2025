@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
     <nav className="flex items-center justify-between px-6 md:px-20 py-4 bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] relative">
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 pointer-events-none">
     <Image
       src={backgroundImageUrl}
       alt="Event background"
@@ -54,17 +54,36 @@ function Navbar() {
       </button>
 
       {isOpen && (
-        <div className="absolute top-full left-0 w-full bg-[#03523C] flex flex-col items-center space-y-6 py-6 z-50 md:hidden">
-          {tabs.map((tab) => (
-            <Link
-              key={tab}
-              href={`/${tab.toLowerCase()}`}
-              className="text-[#FFD9A4] hover:text-white text-lg transition"
-              onClick={() => setIsOpen(false)}
-            >
-              {tab}
-            </Link>
-          ))}
+        <div className="absolute top-full left-0 w-full bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] flex flex-col items-center space-y-6 py-6 z-50 md:hidden">
+          <div className="absolute inset-0 z-0 pointer-events-none">
+    <Image
+      src={backgroundImageUrl}
+      alt="Event background"
+      fill
+      className="object-cover"
+      
+    />
+  </div>
+
+          <div className="absolute top-0 left-0 w-full h-screen bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] flex flex-col items-center justify-center space-y-6 z-50 md:hidden">
+            <Image
+      src={backgroundImageUrl}
+      alt="Event background"
+      fill
+      className="object-cover"
+      
+    />
+  {tabs.map((tab) => (
+    <Link
+      key={tab}
+      href={`/${tab.toLowerCase()}`}
+      className="text-[#FFD9A4] hover:text-white text-2xl transition"
+      onClick={() => setIsOpen(false)}
+    >
+      {tab}
+    </Link>
+  ))}
+</div>
         </div>
       )}
     </nav>

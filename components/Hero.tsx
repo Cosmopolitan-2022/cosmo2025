@@ -18,7 +18,7 @@ function Hero() {
 
  return (
   <>
-    <section className="relative pb-[700px] sm:pb-[180px] pt-[50px] md:pb-[117px] flex flex-col md:flex-row items-center overflow-visible justify-center bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] w-full">
+    <section className="relative pb-[200px] pt-[50px] md:pb-[117px] flex flex-col md:flex-row items-center overflow-visible justify-center bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] w-full">
       <Image
               src={backgroundImageUrl}
               alt="Event background"
@@ -80,8 +80,8 @@ function Hero() {
   />
 
   <div
-  className="absolute top-0 left-1/2 md:left-auto md:right-10 
-             transform -translate-x-1/2 md:translate-x-0
+  className="absolute top-0  md:left-auto md:right-10 
+             transform  md:translate-x-0
              flex flex-col items-center md:items-end 
              p-6 md:p-8 lg:px-10"
 >
