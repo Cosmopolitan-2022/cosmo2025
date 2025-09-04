@@ -53,7 +53,7 @@ export default function Events() {
         {cardEvents.map((event) => (
           <div
             key={event.id}
-            className="rounded-xl sm:rounded-2xl md:rounded-[2.6875rem] bg-white/10 w-3/4 max-w-xs mx-auto sm:w-auto sm:mx-0 sm:flex-1 sm:min-w-[11.25rem] sm:max-w-[13.75rem] md:max-w-[21.875rem] lg:max-w-[23.75rem] xl:max-w-[25.4375rem] h-80 sm:h-[17.5rem] md:h-[23.75rem] lg:h-[27.5rem] xl:h-[30.6875rem] flex-shrink-0 relative"
+            className="rounded-xl sm:rounded-2xl md:rounded-[2.6875rem] bg-white/10 border-[3px] border-[#FFD9A4] w-3/4 max-w-xs mx-auto sm:w-auto sm:mx-0 sm:flex-1 sm:min-w-[11.25rem] sm:max-w-[13.75rem] md:max-w-[21.875rem] lg:max-w-[23.75rem] xl:max-w-[25.4375rem] h-80 sm:h-[17.5rem] md:h-[23.75rem] lg:h-[27.5rem] xl:h-[30.6875rem] flex-shrink-0 relative"
           >
             <Image
               src={event.src}
