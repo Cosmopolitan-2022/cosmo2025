@@ -49,17 +49,17 @@ export default function Events() {
       </div>
 
       {/* Event cards */}
-      <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-6 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12 relative z-10">
+      <div className="flex flex-col sm:flex-row sm:flex-wrap md:flex-wrap justify-center gap-2 sm:gap-2 md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-6 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12 relative z-10">
         {cardEvents.map((event) => (
           <div
             key={event.id}
-            className="rounded-[20px] sm:rounded-[30px] md:rounded-[43px] bg-white/10 w-full max-w-[280px] sm:max-w-[320px] md:max-w-[350px] lg:max-w-[380px] xl:max-w-[407px] h-[240px] xs:h-[280px] sm:h-[320px] md:h-[380px] lg:h-[440px] xl:h-[491px] flex-shrink-0 relative mx-auto"
+            className="rounded-[20px] sm:rounded-[25px] md:rounded-[43px] bg-white/10 w-full sm:w-auto sm:flex-1 sm:min-w-[180px] sm:max-w-[220px] md:max-w-[350px] lg:max-w-[380px] xl:max-w-[407px] h-[240px] xs:h-[260px] sm:h-[280px] md:h-[380px] lg:h-[440px] xl:h-[491px] flex-shrink-0 relative mx-auto sm:mx-0"
           >
             <Image
               src={event.src}
               alt={event.alt}
               fill
-              className="rounded-[20px] sm:rounded-[30px] md:rounded-[43px] object-contain p-2 sm:p-3 md:p-4"
+              className="rounded-[20px] sm:rounded-[25px] md:rounded-[43px] object-contain p-2 sm:p-2 md:p-4"
             />
           </div>
         ))}
