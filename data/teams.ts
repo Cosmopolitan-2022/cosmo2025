@@ -5,6 +5,11 @@ export function getTeamData() {
     "https://res.cloudinary.com/djqgs2pet/image/upload/v1757102162/Vector_swuozh.png";
   const propImg =
     "https://res.cloudinary.com/djqgs2pet/image/upload/v1757096825/image_1_Traced_upijz1.png";
+    const centerImageUrl =
+  "https://res.cloudinary.com/dsjxx976j/image/upload/v1756724529/963fbdec7112799038c0557126e4a1003632df78_bhnwyz.png";
+
+   const fade = 
+     "https://res.cloudinary.com/djqgs2pet/image/upload/v1757111997/Ellipse_64_iutuad.png";
 
   const backgroundImageUrl =
   "https://res.cloudinary.com/dsjxx976j/image/upload/v1756720468/Frame_9590_vttipu.png";
