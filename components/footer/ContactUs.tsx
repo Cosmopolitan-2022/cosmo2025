@@ -26,7 +26,7 @@ function ContactUs() {
             {item.value}
           </a>
         ))}
-        <div className=" md:hidden flex gap-x-5 flex-row w-full max-w-sm justify-center items-center">
+        <div className=" mt-2 md:hidden flex gap-x-3 flex-row w-full max-w-sm justify-center items-center">
           {logo.map((item) => (
             <Image
               key={item.id}
@@ -34,21 +34,23 @@ function ContactUs() {
               alt={item.alt}
               width={0}
               height={0}
-              className={cn(" w-16 h-16 mt-5", item.className)}
+              className={cn(" w-10 h-10 ", item.className)}
             />
           ))}
         </div>
-        {social.map((item) => (
-          <Link target="_blank" className="mt-5" key={item.id} href={item.href}>
+        <div className=" flex flex-row items-center space-x-2">
+           {social.map((item) => (
+          <Link target="_blank" className="mt-3" key={item.id} href={item.href}>
             <Image
               src={item.src}
               alt={item.alt}
-              width={100}
-              height={100}
+              width={30}
+              height={30}
               className="hover:opacity-80 transition-opacity"
             />
           </Link>
         ))}
+        </div>
       </div>
     </div>
   );
