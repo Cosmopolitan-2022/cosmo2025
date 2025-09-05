@@ -5,18 +5,13 @@ import { backgroundImageUrl } from "@/data/events";
 import { getTeamData } from "@/data/teams";
 import { centerImageUrl } from "@/data/events";
 import Image from "next/image";
+import { fade, propImg } from "@/data/teams";
 
 export default function Teams() {
   const teamData = getTeamData();
 
   return (
     <div className="relative min-h-screen bg-gradient-to-r from-[#1c3c2b] via-[#03523C] to-[#1c3c2b] text-white">
-      <Image
-        src={backgroundImageUrl}
-        alt="Event background"
-        fill
-        className="object-cover"
-      />
       
       <div
   className="relative min-h-screen text-white gap-y-50"
@@ -25,17 +20,36 @@ export default function Teams() {
       linear-gradient(to right, rgba(28, 60, 43, 0.9), rgba(3, 82, 60, 0.9), rgba(28, 60, 43, 0.9)),
       url(${centerImageUrl})
     `,
-    backgroundRepeat: "no-repeat, repeat-y", // gradient = no-repeat, mandala = repeat vertically
-    backgroundPosition: "center, top",       // gradient = center, image = top
-    backgroundSize: "cover, 1100px 1100px",   // gradient = cover, image = 400x400px
+    backgroundRepeat: "no-repeat, repeat-y", 
+    backgroundPosition: "center, top",      
+    backgroundSize: "cover,  1100px 1100px",   
   }}
 >
-  {/* your content goes here */}
+    <Image
+        src={backgroundImageUrl}
+        alt="Event background"
+        fill
+        className="object-cover opacity-80"
+        style={{ zIndex: 0}}
+      />
 
+      {/* <div
+  className="relative min-h-screen text-white"
+  style={{
+    backgroundImage: `
+      linear-gradient(to right, rgba(28, 60, 43, 0.9), rgba(3, 82, 60, 0.9), rgba(28, 60, 43, 0.9)),
+      url(${propImg}),
+      url(${fade})
+    `,
+    backgroundRepeat: "no-repeat, repeat-y, repeat-y",
+    backgroundPosition: "center, left top, right 150px top", // stagger left/right
+    backgroundSize: "cover, 200px auto, 120px auto", // big/small pattern
+  }}
+></div> */}
 
 
       <main className="relative z-10 flex flex-col items-center py-12 px-4 sm:px-8 lg:px-16">
-        <h1 className="text-3xl font-traditional tracking-widest sm:text-4xl md:text-5xl xl:text-7xl text-[#FFD9A4] md:mb-30">
+        <h1 className="text-4xl font-traditional tracking-widest sm:text-5xl md:text-6xl xl:text-7xl text-[#FFD9A4] md:mb-30">
           TEAM
         </h1>
 
@@ -46,7 +60,7 @@ export default function Teams() {
         <Section title={teamData.convener.title} members={teamData.convener.members} />
 
         <div className="w-full text-center mb-16">
-          <h2 className="text-3xl font-traditional sm:text-4xl md:mt-20 md:text-5xl xl:text-7xl text-[#FFD9A4] md:mb-25">
+          <h2 className="text-4xl font-traditional sm:text-5xl md:mt-20 md:text-6xl xl:text-7xl text-[#FFD9A4] md:mb-25">
             {teamData.coreTeam.title}
           </h2>
           {teamData.coreTeam.sections.map((sub, idx) => (
@@ -178,10 +192,10 @@ function MemberCard({ name, description, personImg, bgImg }: MemberProps) {
       </div>
 
       <div className="absolute bottom-0 w-full bg-gradient-to-t from-[#FFD9A4] to-[#FFFFFF] text-center pt-3 pb-6">
-        <h4 className="text-4xl font-montserrat font-semibold text-[#03523C]">
+        <h4 className="text-2xl sm:text-4xl font-montserrat font-semibold text-[#03523C]">
           {name}
         </h4>
-        <p className="text-3xl font-montserrat font-normal text-[#03523C]">
+        <p className="text-xl sm:text-3xl font-montserrat font-normal text-[#03523C]">
           {description}
         </p>
       </div>

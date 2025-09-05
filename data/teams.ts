@@ -1,3 +1,10 @@
+export const propImg =
+  "https://res.cloudinary.com/djqgs2pet/image/upload/v1757096825/image_1_Traced_upijz1.png";
+
+export const fade =
+  "https://res.cloudinary.com/djqgs2pet/image/upload/v1757111997/Ellipse_64_iutuad.png";
+
+
 export function getTeamData() {
   const personImg =
     "https://res.cloudinary.com/djqgs2pet/image/upload/v1757096826/image_61_gfx6av.png";
