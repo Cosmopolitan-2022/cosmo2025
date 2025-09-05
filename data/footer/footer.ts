@@ -1,9 +1,10 @@
+ 
 
 export const footerData = {
 
     sectionsStyle: [
         {
-            className: " text-[28px] md:text-[20px] lg:text-[24px] xl:text-[28px] font-semibold uppercase text-[#03523C] font-sans font-traditional",
+            className: " text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] font-semibold uppercase text-[#03523C] font-sans font-traditional",
         }
     ],
     cosmo: {
@@ -42,10 +43,22 @@ export const footerData = {
     social: [
         {
             id: 1,
-            platform: "facebook",
-            src: "https://res.cloudinary.com/du5qoczcn/image/upload/v1756920310/Group_26086368_x6thh5.svg",
-            alt: " social icon",
+            
+            src: "https://res.cloudinary.com/du5qoczcn/image/upload/v1757099353/fbsvg_iedevj.svg",
+            alt: " facebook icon",
             href: "https://www.facebook.com/"
+        },
+        {
+            id: 2,
+            src:"https://res.cloudinary.com/du5qoczcn/image/upload/v1757099353/ytsvg_hirfs8.svg",
+            alt: " youtube icon",
+            href: "https://www.youtube.com/"
+        },
+        {
+            id: 3,
+            src:"https://res.cloudinary.com/du5qoczcn/image/upload/v1757099352/igsvg_k2oath.svg",
+            alt: " instagram icon",
+            href: "https://www.instagram.com/"
         }
     ],
 
@@ -64,7 +77,7 @@ export const logo = [
         name: "cosmo-logo-2",
         src: "https://res.cloudinary.com/du5qoczcn/image/upload/v1756930614/Group_9256-2_nb52ow.svg",
         alt: "Cosmo logo 2",
-        className: "border-x-1 px-4 h-24 w-24 border-[#03523C]"
+        className: "border-x-1 px-4 h-16 w-16 border-[#03523C]"
     },
     {
         id: 3,
