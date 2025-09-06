@@ -13,7 +13,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center h-[80px] md:h-[120px] overflow-hidden justify-between px-6 md:px-20 bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] relative">
+    <nav className="flex items-center h-[80px] md:h-[120px] overflow-visible  justify-between px-6 md:px-20 bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] relative">
       <div className="absolute inset-0 z-0 pointer-events-none">
     <Image
       src={backgroundImageUrl}
@@ -54,8 +54,8 @@ function Navbar() {
       </button>
 
       {isOpen && (
-        <div className="absolute top-full left-0  w-full bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] flex flex-col items-center space-y-6 py-6 z-50 md:hidden">
-          <div className="absolute inset-0 z-50 pointer-events-none">
+        <div className="absolute top-full left-0 w-full bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] flex flex-col items-center z-50 md:hidden">
+          <div className="absolute inset-0 z-0 pointer-events-none">
     <Image
       src={backgroundImageUrl}
       alt="Event background"
@@ -65,7 +65,7 @@ function Navbar() {
     />
   </div>
 
-          <div className="absolute top-0 left-0 w-full h-screen bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] flex flex-col items-center justify-center space-y-6 z-50 md:hidden">
+    <div className="absolute font-light top-0 left-0 w-full h-screen bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] flex flex-col items-center space-y-4 z-50 md:hidden">
             <Image
       src={backgroundImageUrl}
       alt="Event background"
@@ -91,4 +91,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
