@@ -7,12 +7,12 @@ import FunEvents from "@/components/Funevents/FunEvents";
 export default function Home() {
   return (
     <div>
-      <Navbar />
+       
       <Hero />
       <FunEvents/>
       <Events />
       <Highlights/>
-      <Footer/>
+       
     </div>
   );
 }

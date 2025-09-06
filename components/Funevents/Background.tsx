@@ -6,7 +6,7 @@ import { backgroundElements } from '@/data/funevents/funevents'
 function Background() {
   const { background , centerDecoration, lamp , lightEffect1 ,lightEffect2 }= backgroundElements
   return (
-    <div><Image
+    <div className='h-full w-full'><Image
              src={background.src}
              alt={background.alt}
             fill
