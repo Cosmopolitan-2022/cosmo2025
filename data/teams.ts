@@ -21,6 +21,9 @@ export function getTeamData() {
   const backgroundImageUrl =
   "https://res.cloudinary.com/dsjxx976j/image/upload/v1756720468/Frame_9590_vttipu.png";
 
+  const arrowahead = "https://res.cloudinary.com/djqgs2pet/image/upload/v1757172558/arrow_ahead_si9adp.svg";
+  const arrowback = "https://res.cloudinary.com/djqgs2pet/image/upload/v1757172557/arrow_prev_cumlyo.svg";
+
   return {
     ourPatron: {
       title: "OUR PATRON",
@@ -72,6 +75,13 @@ export function getTeamData() {
           ]
         }
       ]
-    }
+    },
+    assets: {
+      centerImageUrl,
+      fade,
+      backgroundImageUrl,
+      arrowahead,
+      arrowback,
+    },
   };
 }

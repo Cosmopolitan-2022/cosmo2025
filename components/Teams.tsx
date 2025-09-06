@@ -10,9 +10,10 @@ export default function Teams() {
   const teamData = getTeamData();
     const copies = Array.from({ length: 1 });
    const repeatCount = 4;
+   
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-r from-[#1c3c2b] via-[#03523C] to-[#1c3c2b] text-white">
+    <div className="relative mt-[-1px] min-h-screen bg-gradient-to-r from-[#1c3c2b] via-[#03523C] to-[#1c3c2b] text-white">
       < div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         {Array.from({ length: repeatCount }).map((_, i) => (
           <BackgroundTeams key={i} />
@@ -102,6 +103,7 @@ function Section({
       prev + perView >= total ? 0 : prev + perView
     );
   };
+  const { assets } = getTeamData();
 
   return (
     <div className="w-full text-center mb-16">
@@ -113,12 +115,17 @@ function Section({
 
       <div className="relative flex items-center justify-center">
         {total > perView && (
-          <button
-            onClick={prevSlide}
-            className="absolute left-2 z-20 text-[#FFD9A4] hover:text-white text-3xl sm:text-4xl md:text-5xl leading-none"
-          >
-            &lt;
-          </button>
+          <button onClick={prevSlide}
+            className="absolute left-2 z-20 text-[#FFD9A4] hover:text-white text-3xl sm:text-4xl md:text-5xl leading-none">
+          <Image
+            src={assets.arrowback}
+            alt="Previous"
+            width={40}
+            height={40}
+                        className="w-6 h-6 sm:w-10 sm:h-10 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-12 xl:h-12"
+
+          />
+        </button>
         )}
 
         <div className="flex gap-8 justify-center">
@@ -132,9 +139,16 @@ function Section({
         {total > perView && (
           <button
             onClick={nextSlide}
-            className="absolute right-2 z-20 text-[#FFD9A4] hover:text-white text-3xl sm:text-4xl md:text-5xl leading-none"
+            className="absolute right-2 z-20 text-[#FFD9A4] hover:text-white leading-none"
           >
-            &gt;
+            <Image
+            src={assets.arrowahead}
+            alt="Previous"
+            width={40}
+            height={40}
+            className="w-6 h-6 sm:w-10 sm:h-10 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-12 xl:h-12"
+
+          />
           </button>
         )}
       </div>
