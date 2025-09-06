@@ -1,53 +1,24 @@
 
 "use client";
 import React, { useState, useEffect } from "react";
-import { backgroundImageUrl } from "@/data/events";
 import { getTeamData } from "@/data/teams";
-import { centerImageUrl } from "@/data/events";
 import Image from "next/image";
-import { fade, propImg } from "@/data/teams";
+import BackgroundTeams from "./ui/background";
+
 
 export default function Teams() {
   const teamData = getTeamData();
+    const copies = Array.from({ length: 1 });
+   const repeatCount = 4;
 
   return (
     <div className="relative min-h-screen bg-gradient-to-r from-[#1c3c2b] via-[#03523C] to-[#1c3c2b] text-white">
+      < div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+        {Array.from({ length: repeatCount }).map((_, i) => (
+          <BackgroundTeams key={i} />
+        ))}
+        </div>
       
-      <div
-  className="relative min-h-screen text-white gap-y-50"
-  style={{
-    backgroundImage: `
-      linear-gradient(to right, rgba(28, 60, 43, 0.9), rgba(3, 82, 60, 0.9), rgba(28, 60, 43, 0.9)),
-      url(${centerImageUrl})
-    `,
-    backgroundRepeat: "no-repeat, repeat-y", 
-    backgroundPosition: "center, top",      
-    backgroundSize: "cover,  1100px 1100px",   
-  }}
->
-    <Image
-        src={backgroundImageUrl}
-        alt="Event background"
-        fill
-        className="object-cover opacity-80"
-        style={{ zIndex: 0}}
-      />
-
-      {/* <div
-  className="relative min-h-screen text-white"
-  style={{
-    backgroundImage: `
-      linear-gradient(to right, rgba(28, 60, 43, 0.9), rgba(3, 82, 60, 0.9), rgba(28, 60, 43, 0.9)),
-      url(${propImg}),
-      url(${fade})
-    `,
-    backgroundRepeat: "no-repeat, repeat-y, repeat-y",
-    backgroundPosition: "center, left top, right 150px top", // stagger left/right
-    backgroundSize: "cover, 200px auto, 120px auto", // big/small pattern
-  }}
-></div> */}
-
-
       <main className="relative z-10 flex flex-col items-center py-12 px-4 sm:px-8 lg:px-16">
         <h1 className="text-4xl font-traditional tracking-widest sm:text-5xl md:text-6xl xl:text-7xl text-[#FFD9A4] md:mb-30">
           TEAM
@@ -74,7 +45,7 @@ export default function Teams() {
         </div>
       </main>
     </div>
-    </div>
+
   );
 }
 
