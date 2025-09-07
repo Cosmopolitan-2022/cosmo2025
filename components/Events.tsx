@@ -1,22 +1,10 @@
-'use client'
 import Image from "next/image";
-import { useState } from "react";
 import { backgroundImageUrl } from "@/data/events";
 import { cardEvents } from "@/data/events";
 import { centerImageUrl } from "@/data/events";
 import { intersectImageUrl } from "@/data/events";
 
 export default function Events() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextCard = () => {
-    setCurrentIndex((prev) => (prev + 1) % cardEvents.length);
-  };
-
-  const prevCard = () => {
-    setCurrentIndex((prev) => (prev - 1 + cardEvents.length) % cardEvents.length);
-  };
-
   return (
     <div className="w-full min-h-screen py-12 sm:py-16 md:py-20 lg:py-32 xl:py-40  bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] relative ">
       <Image
@@ -61,76 +49,20 @@ export default function Events() {
       </div>
 
       {/* Event cards */}
-      <div className="relative z-10">
-        {/* Mobile carousel */}
-        <div className="block sm:hidden px-2">
-          <div className="relative flex items-center justify-center">
-            {/* Previous button */}
-            <button
-              onClick={prevCard}
-              className="absolute left-0 z-20 p-2 text-[#FFD9A4] hover:text-white transition-colors duration-200"
-              aria-label="Previous event"
-            >
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-
-            {/* Single card for mobile */}
-            <div className="w-3/4 max-w-xs mx-auto">
-              <div className="rounded-xl bg-white/10 border-[3px] border-[#FFD9A4] h-80 relative cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-[#FFD9A4]/20 hover:border-[#FFD9A4] hover:bg-white/20">
-                <Image
-                  src={cardEvents[currentIndex].src}
-                  alt={cardEvents[currentIndex].alt}
-                  fill
-                  className="rounded-xl object-contain p-2 transition-all duration-300"
-                />
-              </div>
-            </div>
-
-            {/* Next button */}
-            <button
-              onClick={nextCard}
-              className="absolute right-0 z-20 p-2 text-[#FFD9A4] hover:text-white transition-colors duration-200"
-              aria-label="Next event"
-            >
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
+      <div className="flex flex-col sm:flex-row sm:flex-wrap md:flex-wrap justify-center gap-4 sm:gap-2 md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-6 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12 relative z-10">
+        {cardEvents.map((event) => (
+          <div
+            key={event.id}
+            className="rounded-xl sm:rounded-2xl md:rounded-[2.6875rem] bg-white/10 border-[3px] border-[#FFD9A4] w-3/4 max-w-xs mx-auto sm:w-auto sm:mx-0 sm:flex-1 sm:min-w-[11.25rem] sm:max-w-[13.75rem] md:max-w-[21.875rem] lg:max-w-[23.75rem] xl:max-w-[25.4375rem] h-80 sm:h-[17.5rem] md:h-[23.75rem] lg:h-[27.5rem] xl:h-[30.6875rem] flex-shrink-0 relative"
+          >
+            <Image
+              src={event.src}
+              alt={event.alt}
+              fill
+              className="rounded-xl sm:rounded-2xl md:rounded-[2.6875rem] object-contain p-2 sm:p-2 md:p-4"
+            />
           </div>
-
-          {/* Dots indicator */}
-          <div className="flex justify-center mt-4 space-x-2">
-            {cardEvents.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                  index === currentIndex ? 'bg-[#FFD9A4]' : 'bg-white/30 hover:bg-white/50'
-                }`}
-                aria-label={`Go to event ${index + 1}`}
-              />
-            ))}
-          </div>
-        </div>
-
-        {/* Desktop grid */}
-        <div className="hidden sm:flex sm:flex-row sm:flex-wrap md:flex-wrap justify-center gap-2 md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-6 px-4 md:px-6 lg:px-8 xl:px-12">
-          {cardEvents.map((event) => (
-            <div
-              key={event.id}
-              className="rounded-2xl md:rounded-[2.6875rem] bg-white/10 border-[3px] border-[#FFD9A4] flex-1 min-w-[11.25rem] max-w-[13.75rem] md:max-w-[21.875rem] lg:max-w-[23.75rem] xl:max-w-[25.4375rem] h-[17.5rem] md:h-[23.75rem] lg:h-[27.5rem] xl:h-[30.6875rem] flex-shrink-0 relative cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-[#FFD9A4]/20 hover:border-[#FFD9A4] hover:bg-white/20"
-            >
-              <Image
-                src={event.src}
-                alt={event.alt}
-                fill
-                className="rounded-2xl md:rounded-[2.6875rem] object-contain p-2 md:p-4 transition-all duration-300"
-              />
-            </div>
-          ))}
-        </div>
+        ))}
       </div>
     </div>
   );
