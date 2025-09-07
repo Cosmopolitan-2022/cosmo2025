@@ -13,7 +13,7 @@ export default function Teams() {
    
 
   return (
-    <div className="relative mt-[-1px] min-h-screen bg-gradient-to-r from-[#1c3c2b] via-[#03523C] to-[#1c3c2b] text-white">
+    <div className="relative mt-[-1px] min-h-screen bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)] text-white">
       < div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         {Array.from({ length: repeatCount }).map((_, i) => (
           <BackgroundTeams key={i} />
