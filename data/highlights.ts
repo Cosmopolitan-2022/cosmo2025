@@ -1,5 +1,5 @@
 export const backgroundDesign =
-  "https://res.cloudinary.com/dmah92jqh/image/upload/v1756741917/Group_1000001524_xpszki.png";
+  "https://res.cloudinary.com/dsjxx976j/image/upload/v1756720468/Frame_9590_vttipu.png";
 
 export const centerDesign =
   "https://res.cloudinary.com/dmah92jqh/image/upload/v1756741990/Group_1000001525_xtiiji.png";

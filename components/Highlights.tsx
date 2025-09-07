@@ -3,7 +3,6 @@ import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { left,right } from "@/data/highlights";
 import { carouselImage } from "@/data/highlights";
 import { backgroundDesign,cosmo, centerDesign } from "@/data/highlights";
@@ -36,12 +35,12 @@ export default function Highlights() {
   };
 
   return (
-    <div className="relative min-h-[56vh] w-full py-12 sm:py-12 md:py-28 lg:py-40 bg-[#03523C] overflow-hidden">
+    <div className="relative min-h-[56vh] w-full py-12 sm:py-12 md:py-28 lg:py-40 bg-gradient-to-r from-[#082B20] via-[#03523C] to-[#082B20] overflow-hidden">
       <Image
         src={backgroundDesign}
         alt="pattern"
         fill
-        className="object-cover opacity-50"
+        className="object-cover opacity-100"
       />
       <div className="absolute left-0 bottom-0  z-0">
       <Image
@@ -52,7 +51,7 @@ export default function Highlights() {
         className="object-cover opacity-70 w-28 sm:w-24 md:w-32 lg:w-44"
       />
       </div>
-      <div className="hidden md:flex absolute bottom-[-33px] right-[33px] z-0 w-full sm:w-[200px] sm:inset-0 md:w-[1000px] lg:w-[1400px] items-center justify-center">
+      <div className="hidden md:flex absolute bottom-[-33px] right-[60px] z-0 w-full sm:w-[200px] sm:inset-0 md:w-[1000px] lg:w-[1400px] items-center justify-center">
       <Image
         src={centerDesign}
         alt="craft"
