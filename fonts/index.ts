@@ -1,5 +1,4 @@
 import localFont from "next/font/local";
-import { Montserrat } from "next/font/google";
 
 export const TraditionalCivilization = localFont({
   src: [
@@ -10,11 +9,5 @@ export const TraditionalCivilization = localFont({
     },
   ],
   variable: "--traditional-civilization",
-  display: "swap",
-});
-
-export const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-montserrat",
   display: "swap",
 });
