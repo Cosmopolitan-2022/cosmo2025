@@ -8,7 +8,7 @@ import { events } from "../Data/events/events";
 import Background from "../../components/events/Background";
  
 
-export default function page() {
+export default function Page() {
   const [activeDay, setActiveDay] = useState(day[0]);
   const [currentEvents, setCurrentEvents] = useState(
     events[day[0] as "day1" | "day2" | "day3"]
