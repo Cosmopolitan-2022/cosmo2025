@@ -121,15 +121,7 @@ export default function Merch() {
             width={1000}
             height={1000}
             className="object-cover scale-160 opacity-100" />
-          </div>
-       
-        
-          
+          </div>    
     </div>
-
-    
-
-
-  
   );
 }
