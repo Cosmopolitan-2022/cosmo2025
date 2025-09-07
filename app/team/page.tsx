@@ -6,9 +6,7 @@ import Teams from '@/components/Teams'
 function page() {
   return (
     <div>
-      <Navbar />
       <Teams/>
-      <Footer/>
     </div>
   )
 }

@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 import { navbarHeroData } from "../app/Data/NavbarHero/NavbarHero";
 import { backgroundImageUrl } from "@/data/events"; 
 
+
 function Navbar() {
   const { logo } = navbarHeroData;
   const tabs = navbarHeroData.navbar.tabs;
@@ -54,30 +55,24 @@ function Navbar() {
       </button>
 
       {isOpen && (
-        <div className="absolute top-full left-0 w-full bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] flex flex-col items-center z-50 md:hidden">
-          <div className="absolute inset-0 z-0 pointer-events-none">
-    <Image
-      src={backgroundImageUrl}
-      alt="Event background"
-      fill
-      className="object-cover"
-      
-    />
-  </div>
+        <div className="absolute transition duration-100 top-full left-0 w-full bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] flex flex-col items-center z-50 md:hidden">
+          
 
     <div className="absolute font-light top-0 left-0 w-full h-screen bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] flex flex-col items-center space-y-4 z-50 md:hidden">
-            <Image
-      src={backgroundImageUrl}
-      alt="Event background"
-      fill
-      className="object-cover"
-      
-    />
+            <div className="absolute inset-0 z-0 pointer-events-none">
+      <Image
+        src={backgroundImageUrl}
+        alt="Event background"
+        fill
+        className="object-cover"
+      />
+    </div>
+
   {tabs.map((tab) => (
     <Link
       key={tab}
       href={`/${tab.toLowerCase()}`}
-      className="text-[#FFD9A4] hover:text-white text-2xl transition"
+      className="text-[#FFD9A4] hover:text-white  text-2xl transition duration-100"
       onClick={() => setIsOpen(false)}
     >
       {tab}
