@@ -24,15 +24,18 @@ function Navbar() {
       
     />
   </div>
-      <div className="relative z-10 h-12 w-28 sm:h-16 sm:w-36 md:h-20 md:w-44 lg:h-24 lg:w-52 xl:h-28 xl:w-40">
+      
+      <Link href="/" passHref>
+      <div className="relative md:top-0 md:left-[-20px] z-10  ">
         <Image
           src={logo}
           alt="Logo"
-          fill
-          className="object-contain"
-          priority
+          width={150}
+          height={60} 
+          className="object-contain h-12 w-28 sm:h-16 sm:w-36 md:h-20 md:w-44 lg:h-24 lg:w-52 xl:h-28 xl:w-40"
         />
       </div>
+    </Link>
 
       <ul className="hidden md:pr-6 md:flex space-x-8 text-xl lg:text-2xl font-light">
         {tabs.map((tab) => (
