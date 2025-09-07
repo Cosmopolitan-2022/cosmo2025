@@ -1,3 +1,8 @@
+ export const background = {
+    src:"https://res.cloudinary.com/du5qoczcn/image/upload/v1757141954/Frame_9598_vkulgd.svg",
+    alt:"background image",
+     
+}
  
 
 export const footerData = {

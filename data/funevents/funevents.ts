@@ -1,4 +1,4 @@
-import { Sriracha } from "next/font/google"
+ 
 
  
 
@@ -45,7 +45,7 @@ export const carousel = [
 export const backgroundElements = {
 
     background:{
-        src:"https://res.cloudinary.com/dsjxx976j/image/upload/v1756720468/Frame_9590_vttipu.png",
+        src:"https://res.cloudinary.com/du5qoczcn/image/upload/v1757141954/Frame_9598_vkulgd.svg",
         alt:"background image",
          
     },
