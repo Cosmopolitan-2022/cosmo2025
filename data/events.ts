@@ -1,5 +1,5 @@
 export const backgroundImageUrl =
-  "https://res.cloudinary.com/dsjxx976j/image/upload/v1756720468/Frame_9590_vttipu.png";
+  "https://res.cloudinary.com/du5qoczcn/image/upload/v1757141954/Frame_9598_vkulgd.svg";
 
 export const centerImageUrl =
   "https://res.cloudinary.com/dsjxx976j/image/upload/v1756724529/963fbdec7112799038c0557126e4a1003632df78_bhnwyz.png";
