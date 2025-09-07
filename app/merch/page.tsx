@@ -5,16 +5,24 @@ import { Button } from "@/components/ui/button";
 import { backgroundDesign } from "@/data/merch";
 import {centerDesign} from "@/data/merch"; 
 import {groupDance} from "@/data/merch";
+import {phone} from "@/data/highlights";
 import { cosmo, button } from "@/data/merch";
 
 export default function Merch() {
   return (
-    <div className="w-full min-h-[1650px] pt-10 pb-24  bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] relative">
+    <div className="w-full min-h-[1650px] pt-10 pb-24 bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] relative">
+      <Image
+        src={phone}
+        alt="pattern"
+        fill
+        className="object-cover block md:hidden"
+        priority
+      />
       <Image
         src={backgroundDesign}
         alt="pattern"
         fill
-        className="object-cover"
+        className="object-cover hidden md:block"
       />
       <div className="absolute left-0 bottom-[730px]  z-0 hidden md:block">
             <Image
@@ -39,8 +47,8 @@ export default function Merch() {
       </h2>
 
       <div className="relative max-w-7xl mx-auto px-4 md:px-12 mt-16">
-        <Card className="relative flex flex-col md:flex-row items-center justify-between rounded-2xl border border-[#FFD9A4]/30 bg-#FFFFFF0D backdrop-blur-[3px] overflow-hidden shadow-lg px-8 py-10 min-h-[450px]">
-          <div className="w-100 h-100 bg-[#FFD9A4CC] rounded-xl flex items-center justify-center mb-8 md:mb-0 md:mr-16 flex-shrink-0">
+        <Card className="relative flex flex-col md:flex-row items-center justify-between rounded-2xl md:border md:border-[#FFD9A4]/30 bg-#FFFFFF0D md:backdrop-blur-[3px] overflow-hidden shadow-lg px-8 py-10 min-h-[450px] ">
+          <div className="w-80 h-80 md:w-100 md:h-100 bg-[#FFD9A4CC] rounded-[11px] md:rounded-xl flex items-center justify-center mb-8 md:mb-0 md:mr-16 flex-shrink-0">
             <span className="text-[#03523C] font-semibold"></span>
           </div>
           <div className="flex-1 relative z-10 text-left space-y-4">
@@ -92,9 +100,9 @@ export default function Merch() {
 
 
 
-            <div className="relative max-w-7xl mx-auto px-6 md:px-12 pt-50 mt-16">
-        <Card className="relative flex flex-col md:flex-row items-center justify-between rounded-2xl border border-[#FFD9A4]/30 bg-#FFFFFF0D backdrop-blur-[3px] overflow-hidden shadow-lg px-8 py-10 min-h-[450px]">
-          <div className="w-100 h-100 bg-[#FFD9A4CC] rounded-xl flex items-center justify-center mb-8 md:mb-0 md:mr-16 flex-shrink-0">
+            <div className="relative max-w-7xl mx-auto px-6  mt-8 pt-0 md:px-12 md:pt-50 md:mt-16">
+        <Card className="relative flex flex-col md:flex-row items-center justify-between rounded-2xl md:border md:border-[#FFD9A4]/30 bg-#FFFFFF0D backdrop-blur-[3px] overflow-hidden shadow-lg px-8 py-10 min-h-[450px]">
+          <div className="w-80 h-80 md:w-100 md:h-100 bg-[#FFD9A4CC] rounded-[11px] md:rounded-xl flex items-center justify-center mb-8 md:mb-0 md:mr-16 flex-shrink-0">
             <span className="text-[#03523C] font-semibold"></span>
           </div>
           <div className="flex-1 relative z-10 text-left space-y-4">

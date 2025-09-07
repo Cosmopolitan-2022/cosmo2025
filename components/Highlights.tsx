@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { left,right } from "@/data/highlights";
 import { carouselImage } from "@/data/highlights";
-import { backgroundDesign,cosmo, centerDesign } from "@/data/highlights";
+import { backgroundDesign,cosmo, centerDesign, phone } from "@/data/highlights";
 
 export default function Highlights() {
   const [current, setCurrent] = useState(0);
@@ -51,13 +51,13 @@ export default function Highlights() {
         className="object-cover opacity-70 w-28 sm:w-24 md:w-32 lg:w-44"
       />
       </div>
-      <div className="hidden md:flex absolute bottom-[-33px] right-[60px] z-0 w-full sm:w-[200px] sm:inset-0 md:w-[1000px] lg:w-[1400px] items-center justify-center">
+      <div className="hidden md:block absolute bottom-[-30px] right-[0px] z-0 w-full sm:w-[200px] sm:inset-0 md:w-[1000px] lg:w-[1400px] items-center justify-center">
       <Image
         src={centerDesign}
         alt="craft"
         width={1600}
         height={1600}
-        className="opacity-200 object-contain w-full h-auto"
+        className="opacity-200 object-contain w-full h-auto translate-y-5 translate-x-8"
       />
         </div>
 {/*       <div className="absolute flex items-center bottom-[-50px]  justify-center pointer-events-none -z-10 md:hidden">
@@ -79,17 +79,17 @@ export default function Highlights() {
           variant="ghost"
           size="icon"
           onClick={prevSlide}
+          onTouchStart={prevSlide}
           className="text-white hover:bg-white/10 hover:text-[#F5E1A4] transition-colors rounded-full w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 flex items-center justify-center bg-white/5"
         >
           <Image
             src={left}
             alt="left arrow"
-            width={32}
-            height={32}
-            className="w-8 h-8 sm:w-8 sm:h-8 md:w-8 md:h-8 lg:w-8 lg:h-8 opacity-100"
+            width={16}
+            height={16}
+            className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 opacity-130"
           />
         </Button>
-
         <div 
           className="flex items-center justify-center w-full sm:w-[800px] md:w-[1200px] lg:w-[1800px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[580px] relative"
           onMouseEnter={() => setIsPaused(true)}
@@ -124,14 +124,15 @@ export default function Highlights() {
           variant="ghost"
           size="icon"
           onClick={nextSlide}
+          onTouchStart={nextSlide}
           className="text-white hover:bg-white/10 hover:text-[#F5E1A4] transition-colors rounded-full w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 flex items-center justify-center bg-white/5"
         >
           <Image
             src={right}
             alt="right arrow"
-            width={32}
-            height={32}
-            className="w-8 h-8 sm:w-8 sm:h-8 md:w-8 md:h-8 lg:w-8 lg:h-8 opacity-100"
+            width={16}
+            height={16}
+            className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 opacity-130"
           />
         </Button>
       </div>
