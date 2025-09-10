@@ -90,12 +90,13 @@ export default function Events() {
 
             {/* Single card for mobile */}
             <div className="w-3/4 max-w-xs mx-auto">
-              <div className="rounded-xl bg-white/10 border-[3px] border-[#FFD9A4] h-80 relative cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-[#FFD9A4]/20 hover:border-[#FFD9A4] hover:bg-white/20">
+              <div className="rounded-xl bg-white/10 border-[3px] border-[#FFD9A4] h-80 relative cursor-pointer will-change-transform transition-[transform,box-shadow,background-color] duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-[#FFD9A4]/20 hover:bg-white/20">
                 <Image
                   src={cardEvents[currentIndex].src}
                   alt={cardEvents[currentIndex].alt}
                   fill
-                  className="rounded-xl object-contain p-2 transition-all duration-300"
+                  className="rounded-xl object-contain p-2"
+                  priority={true}
                 />
               </div>
             </div>
@@ -144,13 +145,14 @@ export default function Events() {
           {cardEvents.map((event) => (
             <div
               key={event.id}
-              className="rounded-2xl md:rounded-[2.6875rem] bg-white/10 border-[3px] border-[#FFD9A4] flex-1 min-w-[11.25rem] max-w-[13.75rem] md:max-w-[21.875rem] lg:max-w-[23.75rem] xl:max-w-[25.4375rem] h-[17.5rem] md:h-[23.75rem] lg:h-[27.5rem] xl:h-[30.6875rem] flex-shrink-0 relative cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-[#FFD9A4]/20 hover:border-[#FFD9A4] hover:bg-white/20"
+              className="rounded-2xl md:rounded-[2.6875rem] bg-white/10 border-[3px] border-[#FFD9A4] flex-1 min-w-[11.25rem] max-w-[13.75rem] md:max-w-[21.875rem] lg:max-w-[23.75rem] xl:max-w-[25.4375rem] h-[17.5rem] md:h-[23.75rem] lg:h-[27.5rem] xl:h-[30.6875rem] flex-shrink-0 relative cursor-pointer will-change-transform transition-[transform,box-shadow,background-color] duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-[#FFD9A4]/20 hover:bg-white/20"
             >
               <Image
                 src={event.src}
                 alt={event.alt}
                 fill
-                className="rounded-2xl md:rounded-[2.6875rem] object-contain p-2 md:p-4 transition-all duration-300"
+                className="rounded-2xl md:rounded-[2.6875rem] object-contain p-2 md:p-4"
+                sizes="(max-width: 640px) 75vw, (max-width: 768px) 220px, (max-width: 1024px) 350px, (max-width: 1280px) 380px, 407px"
               />
             </div>
           ))}
