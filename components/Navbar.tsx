@@ -14,7 +14,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center h-[80px] md:h-[120px] overflow-visible  justify-between px-6 md:px-20 bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)] relative">
+    <nav className="smooth-scroll flex items-center h-[80px] md:h-[120px] overflow-visible  justify-between px-6 md:px-20 bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)] relative">
       <div className="absolute inset-0 z-0 pointer-events-none">
     <Image
       src={backgroundImageUrl}
