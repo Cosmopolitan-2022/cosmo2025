@@ -45,31 +45,31 @@ export const carousel = [
 export const backgroundElements = {
 
     background:{
-        src:"https://res.cloudinary.com/du5qoczcn/image/upload/v1757141954/Frame_9598_vkulgd.svg",
+        src:"/backgroundPattern.svg",
         alt:"background image",
          
     },
     centerDecoration:{
-        src:"https://res.cloudinary.com/du5qoczcn/image/upload/v1756998522/Pngtree_ethnic_luxury_mandala_golden_art_8786185_1_lql4sb.svg",
+        src:"centerDecoration.svg",
         alt:"Center decoration",
         width:0,
         height:0
         
     },
     lamp:{
-        src:"https://res.cloudinary.com/du5qoczcn/image/upload/v1757017414/Group_1000001423_zspjgn.svg",
+        src:"/lamp.svg",
         alt:"lamp",
         width:0,
         height:0
     },
     lightEffect1:{
-        src:"https://res.cloudinary.com/du5qoczcn/image/upload/v1757018474/Ellipse_65_zncbuk.svg",
+        src:"/lightEffect.svg",
         alt:"lightEffect1",
         width:0,
         height:0
     },
     lightEffect2:{
-        src:"https://res.cloudinary.com/du5qoczcn/image/upload/v1757018474/Ellipse_65_zncbuk.svg",
+        src:"/lightEffect.svg",
         alt:"lighteffect2",
         width:0,
         height:0

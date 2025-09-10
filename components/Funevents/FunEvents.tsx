@@ -43,7 +43,7 @@ function FunEvents() {
           ))}
         </div>
 
-        <div className="absolute top-16 sm:top-52 lg:top-60 xl:top-64  inset-x-0   flex items-center justify-center px-8">
+        <div className="absolute top-16 sm:top-52 lg:top-60 xl:top-64 inset-x-0 flex items-center justify-center px-8">
           <button
             onClick={Previous}
             className="sm:hidden absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-[#FFD9A4]/80 hover:bg-[#FFD9A4] text-[#03523C] w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg"
@@ -89,7 +89,7 @@ function FunEvents() {
 
           <button
             onClick={Next}
-            className="sm:hidden absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-[#FFD9A4]/80 hover:bg-[#FFD9A4] text-[#03523C] w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg"
+            className="sm:hidden absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-[#FFD9A4]/80 hover:bg-[#FFD9A4] text-[#03523C] w-10 h-10 rounded-full flex items-center justify-center transition-all duration-50 shadow-lg"
           >
             <svg
               width="16"
