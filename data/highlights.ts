@@ -2,7 +2,7 @@ export const backgroundDesign =
   "/backgroundPattern.svg";
 
 export const centerDesign =
-  "/centerDesign.png";
+  "/CenterDesign.png";
 
 export const cosmo =
   "https://res.cloudinary.com/dmah92jqh/image/upload/v1756741915/Group_1000001423_tw1bz8.png";
