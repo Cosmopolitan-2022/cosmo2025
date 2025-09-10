@@ -50,7 +50,7 @@ export const backgroundElements = {
          
     },
     centerDecoration:{
-        src:"centerDecoration.svg",
+        src:"/centerDecoration.svg",
         alt:"Center decoration",
         width:0,
         height:0
