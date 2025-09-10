@@ -12,15 +12,6 @@ function Footer() {
 
   return (
     <div className=" bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)] relative">
-      <div className="absolute top-0 w-full h-full">
-        <Image
-          src={
-            background.src}
-          alt= {background.alt}
-          fill
-          className="object-cover"
-        />
-      </div>
       <div className="relative z-10 pt-4 md:pt-6 px-2 md:pr-4 lg:pr-16 w-full h-max rounded-t-[48px] bg-[#FFD9A4] bg-gradient-to-b from-[#FFD9A4] to-white">
         <div className=" flex flex-col w-full max-w-[400px] md:max-w-full mx-auto md:mx-0 md:flex-row p-2 space-x-2 ">
           <div>

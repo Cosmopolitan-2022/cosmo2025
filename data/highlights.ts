@@ -1,5 +1,4 @@
-export const backgroundDesign =
-  "/backgroundPattern.svg";
+export const backgroundDesign = "/backgroundPattern1.svg";
 
 export const centerDesign =
   "/CenterDesign.png";
