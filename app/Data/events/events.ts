@@ -1,21 +1,21 @@
 export  const  backgroundelements = {
     pattern:{
-        src:"https://res.cloudinary.com/du5qoczcn/image/upload/v1757141954/Frame_9598_vkulgd.svg",
+        src:"/backgroundPattern.svg",
         alt:"pattern",},
     lamp:{
-        src:"https://res.cloudinary.com/du5qoczcn/image/upload/v1757142930/Group_1000001423-2_il2izx.svg",
+        src:"/lamp.svg",
         alt:"lamp",
         width:0,
         height:0,
     },
     decoration:{
-        src:"https://res.cloudinary.com/du5qoczcn/image/upload/v1757156514/Pngtree_ethnic_luxury_mandala_golden_art_8786185_1-2_opxsmr.svg",
+        src:"/centerDecoration.svg",
         alt:"decoration",
         width:0,
         height:0,
     },
     women:{
-        src:"https://res.cloudinary.com/du5qoczcn/image/upload/v1757192065/image_62_jvxjyg.png",
+        src:"/img1.webp",
         alt:"women",
         width:400,
         height:400,
