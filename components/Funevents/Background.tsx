@@ -16,8 +16,8 @@ function Background() {
             <Image
               src={centerDecoration.src}
                alt={centerDecoration.alt}
-              width={centerDecoration.width}
-              height={centerDecoration.height}
+              width={500}
+              height={500}
               className="object-contain w-full max-w-3xl md:max-w-2xl lg:max-w-3xl xl:max-w-5xl  h-[750px] lg:h-[950px] opacity-40  "
             />
           </div>

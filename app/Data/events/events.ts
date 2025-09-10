@@ -1,147 +1,142 @@
-export  const  backgroundelements = {
-    pattern:{
-        src:"/backgroundPattern.svg",
-        alt:"pattern",},
-    lamp:{
-        src:"/lamp.svg",
-        alt:"lamp",
-        width:0,
-        height:0,
+export const backgroundelements = {
+  pattern: {
+    src:"/backgroundPattern1.svg",
+    alt: "pattern",
+  },
+  lamp: {
+    src: "/lamp.svg",
+    alt: "lamp",
+    width: 0,
+    height: 0,
+  },
+  decoration: {
+    src: "/centerDecoration.svg",
+    alt: "decoration",
+    width: 0,
+    height: 0,
+  },
+  women: {
+    src: "/img1.webp",
+    alt: "women",
+    width: 400,
+    height: 400,
+  },
+};
+
+export const events = {
+  day1: [
+    {
+      id: 1,
+      eventName: "Dance day",
+      src: "src",
+      alt: "dance event",
+      height: 0,
+      width: 0,
+      className: "className",
     },
-    decoration:{
-        src:"/centerDecoration.svg",
-        alt:"decoration",
-        width:0,
-        height:0,
+    {
+      id: 2,
+      eventName: "Music day",
+      src: "src",
+      alt: "music event",
+      height: 0,
+      width: 0,
+      className: "className",
     },
-    women:{
-        src:"/img1.webp",
-        alt:"women",
-        width:400,
-        height:400,
-    }
-}
+    {
+      id: 3,
+      eventName: "Drama day",
+      src: "src",
+      alt: "drama event",
+      height: 0,
+      width: 0,
+      className: "className",
+    },
+    {
+      id: 4,
+      eventName: "Fashion day",
+      src: "src",
+      alt: "fashion event",
+      height: 0,
+      width: 0,
+      className: "className",
+    },
+  ],
+  day2: [
+    {
+      id: 1,
+      eventName: "Sports day",
+      src: "src",
+      alt: "sports event",
+      height: 0,
+      width: 0,
+      className: "className",
+    },
+    {
+      id: 2,
+      eventName: "Gaming day",
+      src: "src",
+      alt: "gaming event",
+      height: 0,
+      width: 0,
+      className: "className",
+    },
+    {
+      id: 3,
+      eventName: "Food day",
+      src: "src",
+      alt: "food event",
+      height: 0,
+      width: 0,
+    },
+    {
+      id: 4,
+      eventName: "Art day",
+      src: "src",
+      alt: "art event",
+      height: 0,
+      width: 0,
+      className: "className",
+    },
+  ],
+  day3: [
+    {
+      id: 1,
+      eventName: "Workshops",
+      src: "src",
+      alt: "workshop event",
+      height: 0,
+      width: 0,
+      className: "className",
+    },
+    {
+      id: 2,
+      eventName: "Talks",
+      src: "src",
+      alt: "talks event",
+      height: 0,
+      width: 0,
+      className: "className",
+    },
+    {
+      id: 3,
+      eventName: "Exhibitions",
+      src: "src",
+      alt: "exhibition event",
+      height: 0,
+      width: 0,
+      className: "className",
+    },
+    {
+      id: 4,
+      eventName: "Cultural night",
+      src: "src",
+      alt: "cultural event",
+      height: 0,
+      width: 0,
+      className: "className",
+    },
+  ],
+};
 
-
- export const events = {
-    day1:[
-        {
-            id:1,
-            eventName:"Dance day",
-            src:"src",
-            alt:"dance event",
-            height:0,
-            width:0,
-            className:"className",
-             
-
-        },
-        {   id:2,
-            eventName:"Music day",
-            src:"src",
-            alt:"music event",
-            height:0,
-            width:0,
-            className:"className",
-        },
-        {
-            id:3,
-            eventName:"Drama day",
-            src:"src",
-            alt:"drama event",
-            height:0,
-            width:0,
-            className:"className",
-        },
-        {  id:4,
-            eventName:"Fashion day",
-            src:"src",
-            alt:"fashion event",
-            height:0,
-            width:0,
-            className:"className",
-        }
-        
-    
-
-    ],
-    day2:[
-        {
-            id:1,
-            eventName:"Sports day",
-            src:"src",
-            alt:"sports event",
-            height:0,
-            width:0,
-            className:"className",
-        },
-        {
-            id:2,
-            eventName:"Gaming day",
-            src:"src",
-            alt:"gaming event",
-            height:0,
-            width:0,
-            className:"className",
-        },
-        {
-            id:3,
-            eventName:"Food day",
-            src:"src",
-            alt:"food event",
-            height:0,
-            width:0,    
-       },
-        {
-            id:4,
-            eventName:"Art day",
-            src:"src",
-            alt:"art event",
-            height:0,
-            width:0,
-            className:"className",
-        }
-    ],
-    day3:[
-        {
-            id:1,
-            eventName:"Workshops",
-            src:"src",
-            alt:"workshop event",
-            height:0,
-            width:0,
-            className:"className",
-        },
-        {
-            id:2,
-            eventName:"Talks",
-            src:"src",
-            alt:"talks event",
-            height:0,
-            width:0,
-            className:"className",
-        },
-        {  id:3,
-            eventName:"Exhibitions",
-            src:"src",
-            alt:"exhibition event",
-            height:0,
-            width:0,
-            className:"className",
-        },
-        { 
-            id:4,
-            eventName:"Cultural night",
-            src:"src",
-            alt:"cultural event",
-            height:0,
-            width:0,
-            className:"className",
-        }
-    ]
-
-}
-
-export const day = ["day1" , "day2" , "day3"]
-
-
+export const day = ["day1", "day2", "day3"];
