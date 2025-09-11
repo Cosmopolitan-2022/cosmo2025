@@ -16,7 +16,7 @@ const { sectionsStyle:className } = footerData
             { 
               information.map((item) => (
                 <Link href={item.href} key={item.id}>
-                  <div className='md:text-base lg:text-[18px] font-semibold capitalize  leading-normal text-[#03523C]'>{item.label}</div>
+                  <div className='md:text-base lg:text-[18px] font-semibold capitalize  leading-normal text-[#03523C] font-montserrat'>{item.label}</div>
 
                 </Link>
 

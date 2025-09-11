@@ -8,12 +8,12 @@ function Address() {
   return (
     <div className="w-full">
       <h1 className={cn(" text-center", className[0].className)}> VENUE</h1>
-      <div className=" px-4 flex flex-col  ">
+      <div className=" px-4 flex flex-col">
         {venue.map((item) => (
           <div
             key={item.id}
             className={cn(
-              "md:text-base lg:text-[18px] text-center font-semibold capitalize  leading-normal text-[#03523C] "
+              "md:text-base lg:text-[18px] text-center font-semibold capitalize  leading-normal text-[#03523C] font-montserrat"
             )}
           >
             {item.name}

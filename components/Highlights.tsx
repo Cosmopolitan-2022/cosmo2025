@@ -156,7 +156,8 @@ export default function Highlights() {
                   width={250}
                   height={250}
                   className="object-cover rounded-lg size-full"
-                  
+                  priority={index === current}
+                  loading={index === current ? "eager" : "lazy"}
                 />
               </div>
             </Card>

@@ -51,7 +51,7 @@ export default function Merch() {
           <div className="w-80 h-80 md:w-100 md:h-100 bg-[#FFD9A4CC] rounded-[11px] md:rounded-xl flex items-center justify-center mb-8 md:mb-0 md:mr-16 flex-shrink-0">
             <span className="text-[#03523C] font-semibold"></span>
           </div>
-          <div className="flex-1 relative z-10 text-left space-y-4">
+          <div className="flex-1 relative z-10 text-left space-y-4 font-montserrat">
             <h3 className="text-6xl font-bold text-white font-'Outfit'">Merch 01</h3>
             <p className="text-4xl font-semibold text-[#FFD9A4] font-'Outfit'">Description</p>
             <p className="text-2xl text-white font-'Montserrat'">Price : Rs xyz</p>
