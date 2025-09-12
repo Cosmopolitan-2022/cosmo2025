@@ -20,7 +20,7 @@ function ContactUs() {
             key={item.id}
             href={item.href}
             className={cn(
-              "md:text-base lg:text-[18px] font-semibold capitalize leading-normal text-[#03523C] hover:underline"
+              "md:text-base lg:text-[18px] font-semibold capitalize leading-normal text-[#03523C] hover:underline font-montserrat"
             )}
           >
             {item.value}

@@ -30,7 +30,7 @@ function FunEvents() {
           {carousel.map((event, index) => (
             <button
               className={cn(
-                "text-white px-5 py-1 text-center font-sans text-base lg:text-xl font-medium leading-normal border-2 rounded-md transition-all duration-300",
+                "text-white px-5 py-1 text-center text-base lg:text-xl font-medium leading-normal border-2 rounded-md transition-all duration-300 font-montserrat",
                 activeTab === index
                   ? "border-[#FFD9A4] bg-[#FFD9A4]/20"
                   : "border-transparent hover:border-[#FFD9A4]"
@@ -75,13 +75,13 @@ function FunEvents() {
             </div>
 
             <div className="h-[55%] sm:h-full sm:w-1/2 relative sm:pl-5 sm:py-3 ">
-              <h2 className=" text-4xl text-center sm:text-left md:text-5xl lg:text-7xl font-bold text-[#FFD9A4]  sm:mb-4">
+              <h2 className=" text-4xl text-center sm:text-left md:text-5xl lg:text-7xl font-bold text-[#FFD9A4] sm:mb-4 font-montserrat">
                 {activeEvent.title}
               </h2>
-              <p className="text-[#FFD9A4] mt-2 md:mt-6 text-xl text-center sm:text-left sm:text-2xl lg:text-4xl mb-4 font-semibold">
+              <p className="text-[#FFD9A4] mt-2 md:mt-6 text-xl text-center sm:text-left sm:text-2xl lg:text-4xl mb-4 font-semibold font-montserrat">
                 {activeEvent.date}
               </p>
-              <p className="text-white text-center text-[16px] lg:text-2xl sm:text-justify font-light font-sans leading-relaxed sm:leading-none px-2 sm:px-0 sm:absolute sm:bottom-0">
+              <p className="text-white text-center text-[16px] lg:text-2xl sm:text-justify font-light font-sans leading-relaxed sm:leading-none px-2 sm:px-0 sm:absolute sm:bottom-0 font-montserrat">
                 {activeEvent.desc}
               </p>
             </div>
