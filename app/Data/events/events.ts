@@ -18,8 +18,8 @@ export const backgroundelements = {
   women: {
     src: "/img1.webp",
     alt: "women",
-    width: 400,
-    height: 400,
+    width: 500,
+    height: 500,
   },
 };
 
