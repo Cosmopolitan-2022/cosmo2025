@@ -31,7 +31,7 @@ function Footer() {
         </div>
         <div className=" h-[1px] mx-auto w-[90%] mt-2 bg-[#03523C]"></div>
         <div className="w-full mt-2">
-          <h1 className="text-center text-[8px] md:text-[10px] font-semibold uppercase   text-[#03523C]  leading-normal">
+          <h1 className="text-center text-[10px] md:text-[12px] font-semibold uppercase text-[#03523C] leading-normal font-montserrat">
             {" "}
             2025 © Webwiz X Cosomo. All rights reserved.
           </h1>

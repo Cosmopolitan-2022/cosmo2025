@@ -94,7 +94,7 @@ function Hero() {
                 className="text-center md:text-right text-[#e6e6c7] 
                text-md md:text-base lg:text-lg xl:text-2xl
                 md:max-w-lg lg:max-w-lg xl:max-w-4xl
-                 w-full px-4"
+                 w-full px-4 font-montserrat"
               >
                 {subText}
               </p>
@@ -111,7 +111,7 @@ function Hero() {
                   className="object-cover pointer-events-none"
                 />
 
-                <span className="relative z-10">EXPLORE</span>
+                <span className="relative z-10 font-montserrat">EXPLORE</span>
               </button>
             </div>
           </div>
