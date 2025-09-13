@@ -30,7 +30,7 @@ export default function Page() {
         </div>
         <div className=" absolute p-2 top-24 md:top-28 xl:top-44 mx-3 sm:mx-0 inset-x-0 sm:inset-x-auto sm:right-[3%]  xl:right-[7%]">
           <div className=" flex flex-row items-center justify-center space-x-8 lg:space-x-10 ">
-            <h1 className="text-[30px] md:text-[40px] lg:text-[50px] font-extrabold text-white">
+            <h1 className="text-[30px] font-montserrat md:text-[40px] lg:text-[50px] font-extrabold text-white">
               {" "}
               Day
             </h1>
@@ -67,7 +67,7 @@ export default function Page() {
                         dominantBaseline="middle"
                         fontSize="16"
                         fill="#03523C"
-                        fontFamily="Arial"
+                        fontFamily="Montserrat"
                         fontWeight="bold"
                       >
                         {dayName.replace("day", "")}
