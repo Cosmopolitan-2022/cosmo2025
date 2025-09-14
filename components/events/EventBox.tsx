@@ -7,6 +7,7 @@ export default function EventBox({
 }: {
   title: string;
 
+  
   className?: string;
 }) {
   return (
