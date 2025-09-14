@@ -1,6 +1,6 @@
 export const backgroundelements = {
   pattern: {
-    src:"/backgroundPattern1.svg",
+    src: "/backgroundPattern1.svg",
     alt: "pattern",
   },
   lamp: {
@@ -16,10 +16,10 @@ export const backgroundelements = {
     height: 0,
   },
   women: {
-    src: "/img1.webp",
+    src: "/women.png",
     alt: "women",
-    width: 400,
-    height: 400,
+    width: 1000,
+    height: 1000,
   },
 };
 
@@ -61,6 +61,42 @@ export const events = {
       width: 0,
       className: "className",
     },
+    {
+      id: 5,
+      eventName: "Literature day",
+      src: "src",
+      alt: "literature event",
+      height: 0,
+      width: 0,
+      className: "className",
+    },
+    {
+      id: 6,
+      eventName: "Photography",
+      src: "src",
+      alt: "photography event",
+      height: 0,
+      width: 0,
+      className: "className",
+    },
+    {
+      id: 7,
+      eventName: "Film screening",
+      src: "src",
+      alt: "film event",
+      height: 0,
+      width: 0,
+      className: "className",
+    },
+    {
+      id: 8,
+      eventName: "Comedy night",
+      src: "src",
+      alt: "comedy event",
+      height: 0,
+      width: 0,
+      className: "className",
+    }
   ],
   day2: [
     {
