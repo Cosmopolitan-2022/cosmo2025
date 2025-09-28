@@ -81,7 +81,7 @@ function FunEvents() {
               <p className="text-[#FFD9A4] mt-2 md:mt-6 text-xl text-center sm:text-left sm:text-2xl lg:text-4xl mb-4 font-semibold font-montserrat">
                 {activeEvent.date}
               </p>
-              <p className="text-white text-center text-[16px] lg:text-2xl sm:text-justify font-light  leading-relaxed sm:leading-none px-2 sm:px-0 sm:absolute sm:bottom-0 font-montserrat">
+              <p className="text-white text-center md:text-[16px] text-[12px] lg:text-2xl sm:text-justify font-light sm:leading-none px-2 sm:px-0 font-montserrat pt-4">
                 {activeEvent.desc}
               </p>
             </div>

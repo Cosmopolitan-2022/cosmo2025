@@ -20,6 +20,7 @@ function Navbar() {
       src={backgroundImageUrl}
       alt="Event background"
       fill
+      priority
       className="object-cover min-h-full min-w-full"
       
     />

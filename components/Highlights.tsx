@@ -116,7 +116,7 @@ export default function Highlights() {
         />
       </div>
 
-      <h2 className="relative z-10 text-center text-4xl sm:text-5xl md:text-6xl font-traditional font-bold text-[#FFD9A4] mb-12 sm:mb-16 md:mb-20 lg:mb-24 tracking-wide">
+      <h2 className="relative z-10 text-center text-4xl sm:text-5xl md:text-6xl font-traditional font-bold text-[#FFD9A4] mb-12 sm:mb-16 md:mb-20 lg:mb-24 tracking-wide ">
         HIGHLIGHTS
       </h2>
 
@@ -139,7 +139,7 @@ export default function Highlights() {
         </Button>
 
         <div
-          className="flex items-center justify-center w-full sm:w-[800px] md:w-[1200px] lg:w-[1800px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[580px] relative"
+          className="flex items-center justify-center w-full sm:w-[800px] md:w-[1200px] lg:w-[1800px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[580px] relative mt-4"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >

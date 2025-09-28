@@ -5,7 +5,7 @@ import { backgroundelements } from "@/app/Data/events/events";
 function Background() {
   const { pattern, lamp, decoration, women } = backgroundelements;
   return (
-    <div>
+    <div className="relative">
       <Image
         src={pattern.src}
         alt={pattern.alt}

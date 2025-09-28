@@ -26,20 +26,14 @@ function Hero() {
     [@media(min-width:520px)_and_(max-width:768px)]:pb-[0px]
     "
       >
-        {/* <Image
-          src={backgroundImageUrl}
-          alt="Event background"
-          fill
-          
-          className="object-cover"
-        /> */}
         <div className="relative w-full md:w-1/2 flex items-center ">
           <div className="absolute hidden md:block md:w-[400px] md:h-[800px] lg:w-[500px] lg:h-[1000px] opacity-60">
             <Image
               src={leftBackground}
               alt="Background"
               fill
-              className="object-cover"
+              sizes="100vw(max-width: 768px) 100vw, 50vw"
+              className="(max-width: 768px) 100vw, 50vw"
               priority
             />
           </div>
@@ -49,6 +43,7 @@ function Hero() {
               src={leftImage}
               alt="Left image"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
               priority
             />
@@ -92,16 +87,16 @@ function Hero() {
             >
               <p
                 className="text-center md:text-right text-[#e6e6c7] 
-               text-md md:text-base lg:text-lg xl:text-2xl
+               text-sm md:text-base lg:text-lg xl:text-2xl
                 md:max-w-lg lg:max-w-lg xl:max-w-4xl
-                 w-full px-4 font-montserrat"
+                 w-full font-montserrat"
               >
                 {subText}
               </p>
 
               <button
-                className="relative mr-5 lg:mr-5 mt-20 px-10 py-3 bg-white text-[#1c3c2b] 
-             rounded-lg text-xl md:text-2xl lg:text-2xl xl:text-3xl 
+                className="text-center relative lg:mr-5 mt-20 px-10 py-3 bg-white text-[#1c3c2b] 
+             rounded-lg text-sm md:text-xl lg:text-2xl xl:text-3xl 
              shadow font-bold overflow-hidden"
               >
                 <Image
@@ -123,6 +118,7 @@ function Hero() {
           src={backgroundImageUrl}
           alt="Event background"
           fill
+          
           className="object-cover"
         />
         <div className="relative w-full mt-0 md:h-8 lg:h-8 xl:h-10 z-20 bg-amber-200">
