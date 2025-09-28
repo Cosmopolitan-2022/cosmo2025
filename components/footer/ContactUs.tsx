@@ -44,8 +44,9 @@ function ContactUs() {
             <Image
               src={item.src}
               alt={item.alt}
-              fill
-              className="hover:opacity-80 transition-opacity w-auto h-[30px]"
+              width={30}
+              height={30}
+              className="hover:opacity-80 transition-opacity"
             />
           </Link>
         ))}
