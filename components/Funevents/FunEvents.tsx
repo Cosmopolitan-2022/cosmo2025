@@ -62,7 +62,7 @@ function FunEvents() {
             </svg>
           </button>
 
-          <div className="flex flex-col sm:flex-row h-[600px] sm:h-[300px] md:h-[350px] lg:h-[450px] justify-between w-full max-w-[300px] sm:max-w-[74vw] xl:max-w-4xl   rounded-2xl p-1">
+          <div className="flex flex-col sm:flex-row h-[600px] sm:h-[300px] md:h-[350px] lg:h-[450px] justify-between w-full max-w-[300px] sm:max-w-[74vw] xl:max-w-4xl rounded-2xl p-1">
             <div className="h-[40%] sm:h-full sm:w-1/2 ">
               <div className="relative w-full h-full bg-white rounded-xl overflow-hidden">
                 {/* <Image
