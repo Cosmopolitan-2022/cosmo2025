@@ -18,7 +18,7 @@ export const music =[
 },
 {
     id:4,
-    src:"/music/m4.jpg",
+    src:"/music/m9.jpg",
     alt:"m4",
 },
 {

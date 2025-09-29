@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { left, right } from "@/data/highlights";
 import { carouselImage } from "@/data/highlights";
 import { cosmo, centerDesign } from "@/data/highlights";
+import { backgroundImageUrl } from "@/data/events";
 
 export default function Highlights() {
   const [current, setCurrent] = useState(0);
@@ -77,8 +78,14 @@ export default function Highlights() {
   return (
     <div
       ref={containerRef}
-      className="relative min-h-[56vh] w-full py-12 sm:py-12 md:py-28 lg:py-40 bg-gradient-to-r from-[#082B20] via-[#03523C] to-[#082B20] overflow-hidden"
+      className="relative min-h-[50vh] w-full py-12 sm:py-12 md:py-28 lg:py-40 bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] overflow-hidden"
     >
+      <Image
+              src={backgroundImageUrl}
+              alt="Event background"
+              fill
+              className="object-cover "
+            />
       {/* Background elements with will-change for GPU acceleration */}
       <div className="absolute left-0 bottom-0 z-0 will-change-transform">
         <Image
@@ -86,13 +93,13 @@ export default function Highlights() {
           alt="cosmo"
           width={200}
           height={150}
-          className="object-cover opacity-70 w-28 sm:w-24 md:w-32 lg:w-44"
+          className="object-cover opacity-100 w-28 sm:w-24 md:w-32 lg:w-44"
           priority={false}
           loading="lazy"
         />
       </div>
 
-      <div className="hidden md:block absolute bottom-[-30px] right-[0px] z-0 w-full sm:w-[200px] sm:inset-0 md:w-[1000px] lg:w-[1400px] items-center justify-center will-change-transform">
+      <div className="hidden xl:block absolute bottom-[-30px] right-[0px] z-0 w-full sm:w-[200px] sm:inset-0 md:w-[1000px] lg:w-[1400px] items-center justify-center will-change-transform">
         <Image
           src={centerDesign}
           alt="craft"
@@ -104,13 +111,13 @@ export default function Highlights() {
         />
       </div>
 
-      <div className="absolute flex items-center bottom-[-50px] justify-center pointer-events-none -z-10 md:hidden will-change-transform">
+      <div className="absolute flex items-center opacity-100 bottom-[-50px] justify-center pointer-events-none -z-10 md:hidden will-change-transform">
         <Image
           src={centerDesign}
           alt="craft"
           width={400}
           height={400}
-          className="object-contain w-[250px] sm:w-[300px] h-[250px] sm:h-[300px] opacity-80"
+          className="object-contain w-[250px] sm:w-[300px] h-[250px] sm:h-[300px] opacity-100"
           priority={false}
           loading="lazy"
         />
@@ -126,7 +133,7 @@ export default function Highlights() {
           size="icon"
           onClick={prevSlide}
           onTouchStart={prevSlide}
-          className="text-white hover:bg-white/10 hover:text-[#F5E1A4] transition-colors rounded-full w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 flex items-center justify-center bg-white/5 will-change-transform"
+          className="text-white hover:bg-white/10 hover:text-[#F5E1A4] transition-colors rounded-full w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20  flex items-center justify-center bg-white/5 will-change-transform"
           aria-label="Previous slide"
         >
           <Image
@@ -134,7 +141,7 @@ export default function Highlights() {
             alt="left arrow"
             width={16}
             height={16}
-            className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 opacity-130"
+            className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 opacity-130"
           />
         </Button>
 
@@ -169,7 +176,7 @@ export default function Highlights() {
           size="icon"
           onClick={nextSlide}
           onTouchStart={nextSlide}
-          className="text-white hover:bg-white/10 hover:text-[#F5E1A4] transition-colors rounded-full w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 flex items-center justify-center bg-white/5 will-change-transform"
+          className="text-white hover:bg-white/10 hover:text-[#F5E1A4] transition-colors rounded-full w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center bg-white/5 will-change-transform"
           aria-label="Next slide"
         >
           <Image
@@ -177,7 +184,7 @@ export default function Highlights() {
             alt="right arrow"
             width={16}
             height={16}
-            className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 opacity-130"
+            className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5  opacity-130"
           />
         </Button>
       </div>
