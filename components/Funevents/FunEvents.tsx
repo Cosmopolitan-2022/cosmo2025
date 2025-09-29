@@ -19,7 +19,7 @@ function FunEvents() {
   };
 
   return (
-    <div className="relative py-5 h-[750px] sm:h-[800px] lg:h-[1024px]  bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)]">
+    <div id="fun-events" className="relative py-5 h-[750px] sm:h-[800px] lg:h-[1024px]  bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] ">
       <Background />
 
       <div className="absolute  flex flex-col justify-center items-center inset-x-0 top-4 sm:top-24">
