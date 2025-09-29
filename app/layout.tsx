@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { TraditionalCivilization } from "@/fonts";
+import { TraditionalCivilization, montserrat } from "@/fonts";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/footer/Footer";
@@ -28,9 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${TraditionalCivilization.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${TraditionalCivilization.variable} ${montserrat.variable} antialiased`}
       >
-        <Navbar/>
+        <Navbar />
         {children}
         <Footer/>
       </body>

@@ -19,7 +19,7 @@ function FunEvents() {
   };
 
   return (
-    <div id="fun-events" className="relative py-5 h-[750px] sm:h-[800px] lg:h-[1024px]  bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] ">
+    <div className="relative py-5 h-[750px] sm:h-[800px] lg:h-[1024px]  bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)]">
       <Background />
 
       <div className="absolute  flex flex-col justify-center items-center inset-x-0 top-4 sm:top-24">
@@ -30,7 +30,7 @@ function FunEvents() {
           {carousel.map((event, index) => (
             <button
               className={cn(
-                "text-white px-5 py-1 text-center font-sans text-base lg:text-xl font-medium leading-normal border-2 rounded-md transition-all duration-300",
+                "text-white px-5 py-1 font-montserrat text-center text-base lg:text-xl font-medium leading-normal border-2 rounded-md transition-all duration-300 ",
                 activeTab === index
                   ? "border-[#FFD9A4] bg-[#FFD9A4]/20"
                   : "border-transparent hover:border-[#FFD9A4]"
@@ -43,7 +43,7 @@ function FunEvents() {
           ))}
         </div>
 
-        <div className="absolute top-16 sm:top-52 lg:top-60 xl:top-64  inset-x-0   flex items-center justify-center px-8">
+        <div className="absolute top-16 sm:top-52 lg:top-60 xl:top-64 inset-x-0 flex items-center justify-center px-8">
           <button
             onClick={Previous}
             className="sm:hidden absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-[#FFD9A4]/80 hover:bg-[#FFD9A4] text-[#03523C] w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg"
@@ -62,7 +62,7 @@ function FunEvents() {
             </svg>
           </button>
 
-          <div className="flex flex-col sm:flex-row h-[600px] sm:h-[300px] md:h-[350px] lg:h-[450px] justify-between w-full max-w-[300px] sm:max-w-[74vw] xl:max-w-4xl   rounded-2xl p-1">
+          <div className="flex flex-col sm:flex-row h-[600px] sm:h-[300px] md:h-[350px] lg:h-[450px] justify-between w-full max-w-[300px] sm:max-w-[74vw] xl:max-w-4xl rounded-2xl p-1">
             <div className="h-[40%] sm:h-full sm:w-1/2 ">
               <div className="relative w-full h-full bg-white rounded-xl overflow-hidden">
                 {/* <Image
@@ -75,13 +75,13 @@ function FunEvents() {
             </div>
 
             <div className="h-[55%] sm:h-full sm:w-1/2 relative sm:pl-5 sm:py-3 ">
-              <h2 className=" text-4xl text-center sm:text-left md:text-5xl lg:text-7xl font-bold text-[#FFD9A4]  sm:mb-4">
+              <h2 className=" text-4xl text-center sm:text-left md:text-5xl lg:text-7xl font-bold text-[#FFD9A4] sm:mb-4 font-montserrat">
                 {activeEvent.title}
               </h2>
-              <p className="text-[#FFD9A4] mt-2 md:mt-6 text-xl text-center sm:text-left sm:text-2xl lg:text-4xl mb-4 font-semibold">
+              <p className="text-[#FFD9A4] mt-2 md:mt-6 text-xl text-center sm:text-left sm:text-2xl lg:text-4xl mb-2 font-semibold font-montserrat">
                 {activeEvent.date}
               </p>
-              <p className="text-white text-center text-[16px] lg:text-2xl sm:text-justify font-light font-sans leading-relaxed sm:leading-none px-2 sm:px-0 sm:absolute sm:bottom-0">
+              <p className="text-white text-center md:text-[16px] text-[12px] lg:text-2xl sm:text-justify font-light sm:leading-none px-2 sm:px-0 font-montserrat pt-2">
                 {activeEvent.desc}
               </p>
             </div>
@@ -89,7 +89,7 @@ function FunEvents() {
 
           <button
             onClick={Next}
-            className="sm:hidden absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-[#FFD9A4]/80 hover:bg-[#FFD9A4] text-[#03523C] w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg"
+            className="sm:hidden absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-[#FFD9A4]/80 hover:bg-[#FFD9A4] text-[#03523C] w-10 h-10 rounded-full flex items-center justify-center transition-all duration-50 shadow-lg"
           >
             <svg
               width="16"
@@ -105,7 +105,7 @@ function FunEvents() {
             </svg>
           </button>
 
-          <div className="sm:hidden absolute -bottom-8 left-1/2 -translate-x-1/2 flex space-x-2">
+          <div className="sm:hidden absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
             {carousel.map((_, index) => (
               <button
                 key={index}

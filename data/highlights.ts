@@ -1,8 +1,7 @@
-export const backgroundDesign =
-  "https://res.cloudinary.com/dsjxx976j/image/upload/v1756720468/Frame_9590_vttipu.png";
+export const backgroundDesign = "/backgroundPattern1.svg";
 
 export const centerDesign =
-  "https://res.cloudinary.com/dmah92jqh/image/upload/v1756741990/Group_1000001525_xtiiji.png";
+  "/CenterDesign.png";
 
 export const cosmo =
   "https://res.cloudinary.com/dmah92jqh/image/upload/v1756741915/Group_1000001423_tw1bz8.png";
@@ -12,17 +11,17 @@ export const right = "https://res.cloudinary.com/dmah92jqh/image/upload/v1756930
 export const carouselImage = [
   {
     id: 1,
-    src: "https://res.cloudinary.com/dmah92jqh/image/upload/v1756741929/2_qezzmq.png",
+    src: "/img1.webp",
     alt: "craft",
   },
   {
     id: 2,
-    src: "https://res.cloudinary.com/dmah92jqh/image/upload/v1756741935/highlights_erqa4o.png",
+    src: "/img1.webp",
     alt: "dance",
   },
   {
     id: 3,
-    src: "https://res.cloudinary.com/dmah92jqh/image/upload/v1756741926/1_hngebh.png",
+    src: "/img1.webp",
     alt: "mask",
   },
 ];

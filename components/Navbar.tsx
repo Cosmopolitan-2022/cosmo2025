@@ -14,12 +14,13 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center h-[80px] md:h-[120px] overflow-visible  justify-between px-6 md:px-20 bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)] relative">
+    <nav className="smooth-scroll flex items-center h-[80px] md:h-[120px] overflow-visible  justify-between px-6 md:px-20 bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)] relative">
       <div className="absolute inset-0 z-0 pointer-events-none">
     <Image
       src={backgroundImageUrl}
       alt="Event background"
       fill
+      priority
       className="object-cover min-h-full min-w-full"
       
     />
@@ -37,7 +38,7 @@ function Navbar() {
       </div>
     </Link>
 
-      <ul className="hidden md:pr-6 md:flex space-x-8 text-xl lg:text-2xl font-light">
+      <ul className="hidden md:pr-6 md:flex space-x-8 text-xl lg:text-2xl font-light font-montserrat">
         {tabs.map((tab) => (
           <li key={tab}>
             <Link
