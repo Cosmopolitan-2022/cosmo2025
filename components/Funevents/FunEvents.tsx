@@ -19,7 +19,7 @@ function FunEvents() {
   };
 
   return (
-    <div className="relative py-5 h-[750px] sm:h-[800px] lg:h-[1024px]  bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)]">
+    <div id="fun-events" className="relative py-5 h-[750px] sm:h-[800px] lg:h-[1024px]  bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] ">
       <Background />
 
       <div className="absolute  flex flex-col justify-center items-center inset-x-0 top-4 sm:top-24">
@@ -78,10 +78,10 @@ function FunEvents() {
               <h2 className=" text-4xl text-center sm:text-left md:text-5xl lg:text-7xl font-bold text-[#FFD9A4] sm:mb-4 font-montserrat">
                 {activeEvent.title}
               </h2>
-              <p className="text-[#FFD9A4] mt-2 md:mt-6 text-xl text-center sm:text-left sm:text-2xl lg:text-4xl mb-4 font-semibold font-montserrat">
+              <p className="text-[#FFD9A4] mt-2 md:mt-6 text-xl text-center sm:text-left sm:text-2xl lg:text-4xl mb-2 font-semibold font-montserrat">
                 {activeEvent.date}
               </p>
-              <p className="text-white text-center md:text-[16px] text-[12px] lg:text-2xl sm:text-justify font-light sm:leading-none px-2 sm:px-0 font-montserrat pt-4">
+              <p className="text-white text-center md:text-[16px] text-[12px] lg:text-2xl sm:text-justify font-light sm:leading-none px-2 sm:px-0 font-montserrat pt-2">
                 {activeEvent.desc}
               </p>
             </div>
@@ -105,7 +105,7 @@ function FunEvents() {
             </svg>
           </button>
 
-          <div className="sm:hidden absolute -bottom-8 left-1/2 -translate-x-1/2 flex space-x-2">
+          <div className="sm:hidden absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
             {carousel.map((_, index) => (
               <button
                 key={index}

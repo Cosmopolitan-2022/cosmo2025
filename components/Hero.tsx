@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import { navbarHeroData } from "../app/Data/NavbarHero/NavbarHero";
 import Image from "next/image";
 import { backgroundImageUrl } from "@/data/events";
+import FunEvents from "./Funevents/FunEvents";
 
 function Hero() {
   const {
@@ -94,10 +96,12 @@ function Hero() {
                 {subText}
               </p>
 
-              <button
-                className="text-center relative lg:mr-5 mt-20 px-10 py-3 bg-white text-[#1c3c2b] 
-             rounded-lg text-sm md:text-xl lg:text-2xl xl:text-3xl 
-             shadow font-bold overflow-hidden"
+              <button onClick={() =>
+                  document.getElementById("fun-events")?.scrollIntoView({ behavior: "smooth" })
+                }
+                className="relative mr-5 lg:mr-5 mt-20 px-10 py-3 bg-white text-[#1c3c2b] 
+                          rounded-lg text-xl md:text-2xl lg:text-2xl xl:text-3xl 
+                          shadow font-bold overflow-hidden transform transition-transform duration-300 hover:scale-110"
               >
                 <Image
                   src={border1}
