@@ -20,7 +20,7 @@ export default function Events() {
   };
 
   return (
-    <div className="smooth-scroll w-full h-[50%] py-12 sm:py-16 md:py-20 lg:py-32 xl:py-40  bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] relative ">
+    <div className="smooth-scroll w-full h-[50%] py-12 sm:py-16 md:py-20 lg:py-32 xl:py-40  bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)] relative ">
       <Image
         src={backgroundImageUrl}
         alt="Event background"
