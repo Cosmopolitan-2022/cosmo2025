@@ -81,7 +81,7 @@ export default function Sponsors() {
       <section className="relative z-10 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24">
         <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 xl:gap-12 items-stretch">
           {/* Left Para */}
-          <div className="text-white">
+          <div className="hidden text-white">
             <p className="font-montserrat text-base sm:text-lg md:text-xl lg:text-2xl leading-7 sm:leading-8 md:leading-9 lg:leading-10 tracking-wide">
               {paraData}
             </p>
