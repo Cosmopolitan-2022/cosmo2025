@@ -11,17 +11,38 @@ export const right = "https://res.cloudinary.com/dmah92jqh/image/upload/v1756930
 export const carouselImage = [
   {
     id: 1,
-    src: "/img1.webp",
-    alt: "craft",
+    src: "/highlights/prize1.jpg",
+    alt: "p1",
   },
   {
     id: 2,
-    src: "/img1.webp",
-    alt: "dance",
+    src: "/highlights/prize2.jpg",
+    alt: "p2",
   },
   {
     id: 3,
-    src: "/img1.webp",
-    alt: "mask",
+    src: "/highlights/prize3.jpg",
+    alt: "p3",
   },
+  {
+    id: 4,
+    src: "/highlights/prize4.jpg",
+    alt: "p4",
+  },
+  {
+    id: 5,
+    src: "/highlights/prize5.jpg",
+    alt: "p5",
+  },
+  {
+    id: 6,
+    src: "/highlights/prize6.jpg",
+    alt: "p6",
+  },
+  {
+    id: 7,
+    src: "/highlights/prize7.jpg",
+    alt: "p7",
+  },
+
 ];

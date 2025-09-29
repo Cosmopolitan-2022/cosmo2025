@@ -67,7 +67,7 @@ export default function Highlights() {
         scaleOpacityClass = "scale-0 opacity-0";
       }
 
-      return `transition-transform duration-500 ease-out absolute w-[250px] sm:w-[300px] md:w-[350px] lg:w-[400px] h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] overflow-hidden bg-transparent border-0 !shadow-none ${scaleOpacityClass} ${transformClass}`;
+      return `transition-transform duration-500 ease-out absolute w-[250px] sm:w-[450px] md:w-[600px] lg:w-[700px] h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] overflow-hidden bg-transparent border-0 !shadow-none ${scaleOpacityClass} ${transformClass}`;
     });
   }, [current]);
 
@@ -139,7 +139,7 @@ export default function Highlights() {
         </Button>
 
         <div
-          className="flex items-center justify-center w-full sm:w-[800px] md:w-[1200px] lg:w-[1800px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[580px] relative mt-4"
+          className="flex items-center justify-center w-full sm:w-[800px] md:w-[1200px] lg:w-[1800px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] relative mt-4"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
@@ -153,9 +153,9 @@ export default function Highlights() {
                 <Image
                   src={item.src}
                   alt={item.alt}
-                  width={250}
-                  height={250}
-                  className="object-cover rounded-lg size-full"
+                  width={700} 
+                  height={450} 
+                  className="object-contain rounded-lg w-full h-full"
                   priority={index === current}
                   loading={index === current ? "eager" : "lazy"}
                 />

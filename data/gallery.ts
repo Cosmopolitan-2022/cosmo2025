@@ -1,0 +1,130 @@
+import { s } from "motion/react-client"
+
+export const music =[
+{
+    id:1,
+    src:"/music/m1.jpg",
+    alt:"m1",
+},
+{
+    id:2,
+    src:"/music/m2.jpg",
+    alt:"m2",
+},
+{
+    id:3,
+    src:"/music/m3.jpg",
+    alt:"m3",
+},
+{
+    id:4,
+    src:"/music/m4.jpg",
+    alt:"m4",
+},
+{
+    id:5,
+    src:"/music/m5.jpg",
+    alt:"m5",
+},
+{
+    id:6,
+    src:"/music/m6.jpg",
+    alt:"m6",
+},
+{
+    id:7,
+    src:"/music/m7.jpg",
+    alt:"m7",
+},
+{
+    id:8,
+    src:"/music/m8.jpg",
+    alt:"m8",
+},
+]
+export const dance = [
+    {
+        id:1,
+        src:"/dance/d1.jpg",
+        alt:"d1",
+    },
+    {
+        id:2,
+        src:"/dance/d2.jpg",
+        alt:"d2",
+    },
+    {
+        id:3,
+        src:"/dance/d3.jpg",
+        alt:"d3",
+    },
+    {
+        id:4,
+        src:"/dance/d4.jpg",
+        alt:"d4",
+    },
+    {
+        id:5,
+        src:"/dance/d5.jpg",
+        alt:"d5",
+    },
+    {
+        id:6,
+        src:"/dance/d6.jpg",
+        alt:"d6",
+    },
+    {
+        id:7,
+        src:"/dance/d7.jpg",
+        alt:"d7",
+    },
+    {
+        id:8,
+        src:"/dance/d8.jpg",
+        alt:"d8",
+    }
+]
+export const drama = [
+    {
+        id:1,
+        src:"https://res.cloudinary.com/dmah92jqh/image/upload/v1759160939/swasthik_45_of_46_xgdg34.jpg",
+        alt:"dr1",
+    },
+    {
+        id:2,
+        src:"https://res.cloudinary.com/dmah92jqh/image/upload/v1759160842/chayan-1-3_edwzev.jpg",
+        alt:"dr2",
+    },
+    {
+        id:3,
+        src:"https://res.cloudinary.com/dmah92jqh/image/upload/v1759160800/MIL_2602_yzqtkp.jpg",
+        alt:"dr3",
+    },
+    {
+        id:4,   
+        src:"https://res.cloudinary.com/dmah92jqh/image/upload/v1759160886/chayan_1_of_1_-21_brmwnz.jpg",
+        alt:"dr4",
+    },
+    {
+        id:5,
+        src:"/drama/dr5.jpg",
+        alt:"dr5",
+    },
+    {
+        id:6,
+        src:"/drama/dr6.jpg",
+        alt:"dr6",
+    },
+    {
+        id:7,
+        src:"/drama/dr7.jpg",
+        alt:"dr7",
+    },
+    {
+        id:8,
+        src:"/drama/dr8.jpg",
+        alt:"dr8",
+    },
+
+
+]
