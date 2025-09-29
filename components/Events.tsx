@@ -50,11 +50,6 @@ export default function Events() {
         />
       </div>
 
-      {/* Lighting effects */}
-      <div className="absolute top-10 left-5 w-64 h-64 sm:top-16 sm:left-12 sm:w-80 sm:h-80 md:top-20 md:left-20 md:w-96 md:h-96 rounded-full opacity-50 bg-[#FFD9A4] blur-[9.375rem] sm:blur-[12.5rem] md:blur-[15.625rem] z-0"></div>
-      <div className="absolute bottom-16 right-8 w-52 h-52 sm:bottom-24 sm:right-16 sm:w-64 sm:h-64 md:bottom-32 md:right-32 md:w-80 md:h-80 rounded-full opacity-50 bg-[#FFD9A4] blur-[9.375rem] sm:blur-[12.5rem] md:blur-[15.625rem] z-0"></div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 sm:w-96 sm:h-96 md:w-[31.25rem] md:h-[31.25rem] rounded-full opacity-30 bg-[#FFD9A4] blur-[9.375rem] sm:blur-[12.5rem] md:blur-[15.625rem] z-0"></div>
-
       {/* Title */}
       <div className="flex justify-center relative z-10 mb-8 sm:mb-10 md:mb-16 lg:mb-20">
         <h1 className="text-[var(--cream,#FFD9A4)] text-center font-traditional text-5xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-normal leading-normal tracking-[0.1rem] xs:tracking-[0.15rem] sm:tracking-[0.2rem] md:tracking-[0.3rem] lg:tracking-[0.5rem] xl:tracking-[0.6rem] 2xl:tracking-[0.772rem] px-2 sm:px-4">

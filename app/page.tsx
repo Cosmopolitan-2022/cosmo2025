@@ -4,6 +4,7 @@ import Events from "@/components/Events";
 import Hero from "@/components/Hero";
 import Highlights from "@/components/Highlights";
 import FunEvents from "@/components/Funevents/FunEvents";
+import Sponsors from "@/components/Sponser";
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -11,6 +12,7 @@ export default function Home() {
       <FunEvents/>
       <Events />
       <Highlights />
+      <Sponsors />
     </div>
   );
 }
