@@ -61,7 +61,7 @@ function Navbar() {
         <div className="absolute transition duration-100 top-full left-0 w-full bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)] flex flex-col items-center z-50 md:hidden">
           
 
-    <div className="absolute font-light top-0 left-0 w-full h-screen bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)] flex flex-col items-center space-y-4 z-50 md:hidden">
+    <div className="absolute font-light top-0 left-0 w-full h-screen bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)] flex flex-col items-center justify-center space-y-4 z-50 md:hidden">
             <div className="absolute inset-0 z-0 pointer-events-none">
       <Image
         src={backgroundImageUrl}
@@ -70,6 +70,8 @@ function Navbar() {
         className="object-cover"
       />
     </div>
+
+     <div className="relative z-10 flex flex-col items-center space-y-4 -mt-30">
 
   {tabs.map((tab) => (
     <Link
@@ -81,6 +83,7 @@ function Navbar() {
       {tab}
     </Link>
   ))}
+</div>
 </div>
         </div>
       )}
