@@ -1,10 +1,9 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { backgroundDesign } from "@/data/merch";
 import {centerDesign} from "@/data/merch"; 
 import {groupDance} from "@/data/merch";
 import {phone} from "@/data/highlights";
@@ -27,7 +26,14 @@ const merchData = [
     images: [merch02Front, merch02Back],
   },
 ];
-function MerchCard({ title, description, price, images }: any) {
+interface MerchCardProps {
+  title: string;
+  description: string;
+  price: string;
+  images: StaticImageData[];
+}
+
+function MerchCard({ title, description, price, images }: MerchCardProps) {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -48,7 +54,7 @@ function MerchCard({ title, description, price, images }: any) {
           className="object-contain rounded-xl"
         />
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-          {images.map((_: any, idx: number) => (
+          {images.map((_, idx: number) => (
             <button
               key={idx}
               className={`w-3 h-3 rounded-full ${current === idx ? "bg-[#03523C]" : "bg-[#FFD9A4]"} border border-[#03523C]`}
