@@ -78,7 +78,7 @@ export default function Highlights() {
   return (
     <div
       ref={containerRef}
-      className="relative min-h-[50vh] w-full py-12 sm:py-12 md:py-28 lg:py-40 bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] overflow-hidden"
+      className="relative min-h-[35vh] w-full py-8 pb-0 sm:py-12 md:py-28 lg:py-40 bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] overflow-hidden"
     >
       <Image
               src={backgroundImageUrl}
@@ -93,7 +93,7 @@ export default function Highlights() {
           alt="cosmo"
           width={200}
           height={150}
-          className="object-cover opacity-100 w-28 sm:w-24 md:w-32 lg:w-44"
+          className="object-cover opacity-100 w-18 sm:w-24 md:w-32 lg:w-44"
           priority={false}
           loading="lazy"
         />
@@ -146,7 +146,7 @@ export default function Highlights() {
         </Button>
 
         <div
-          className="flex items-center justify-center w-full sm:w-[800px] md:w-[1200px] lg:w-[1800px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] relative mt-4"
+          className="flex items-center justify-center w-full sm:w-[800px] md:w-[1200px] lg:w-[1800px] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] relative mt-4 -mb-2"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
