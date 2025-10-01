@@ -33,7 +33,7 @@ function Navbar() {
           alt="Logo"
           width={150}
           height={60} 
-          className="object-contain h-12 w-28 sm:h-16 sm:w-36 md:h-20 md:w-44 lg:h-24 lg:w-52 xl:h-28 xl:w-40 opacity-70"
+          className="object-contain h-12 w-28 sm:h-16 sm:w-36 md:h-20 md:w-44 lg:h-24 lg:w-52 xl:h-28 xl:w-40"
         />
       </div>
     </Link>
