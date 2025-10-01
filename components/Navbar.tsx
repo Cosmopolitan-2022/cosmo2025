@@ -27,13 +27,13 @@ function Navbar() {
   </div>
       
       <Link href="/" passHref>
-      <div className="relative md:top-0 md:left-[-20px] z-10  ">
+      <div className="relative md:top-0 md:left-[-20px] z-10">
         <Image
           src={logo}
           alt="Logo"
           width={150}
           height={60} 
-          className="object-contain h-12 w-28 sm:h-16 sm:w-36 md:h-20 md:w-44 lg:h-24 lg:w-52 xl:h-28 xl:w-40"
+          className="object-contain h-12 w-28 sm:h-16 sm:w-36 md:h-20 md:w-44 lg:h-24 lg:w-52 xl:h-28 xl:w-40 opacity-70"
         />
       </div>
     </Link>
@@ -43,7 +43,7 @@ function Navbar() {
           <li key={tab}>
             <Link
               href={`/${tab.toLowerCase()}`}
-              className="text-[#FFD9A4] hover:text-white hover:scale-105 transition duration-200"
+              className="text-[#FFD9A4] hover:text-white hover:scale-105 transition duration-200 font-normal font-montserrat"
             >
               {tab}
             </Link>
@@ -78,7 +78,7 @@ function Navbar() {
     <Link
       key={tab}
       href={`/${tab.toLowerCase()}`}
-      className="text-[#FFD9A4] hover:text-white  text-2xl transition duration-100"
+      className="text-[#FFD9A4] hover:text-white font-normal text-2xl transition duration-100 font-montserrat"
       onClick={() => setIsOpen(false)}
     >
       {tab}

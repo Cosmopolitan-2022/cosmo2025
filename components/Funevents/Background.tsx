@@ -6,7 +6,7 @@ import { backgroundElements } from '@/data/funevents/funevents'
 function Background() {
   const { background , centerDecoration, lamp , lightEffect1 ,lightEffect2 }= backgroundElements
   return (
-    <div className='h-full w-full smooth-scroll'><Image
+    <div className='h-full w-full smooth-scroll bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)]'><Image
              src={background.src}
              alt={background.alt}
             fill

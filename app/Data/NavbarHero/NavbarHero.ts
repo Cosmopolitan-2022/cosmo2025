@@ -1,5 +1,5 @@
 export const navbarHeroData = {
-  logo: "https://res.cloudinary.com/djqgs2pet/image/upload/v1759229882/Group_1000002151_emvkxt.png",
+  logo: "/cosmologo.svg",
   navbar: {
     tabs: ["Gallery", "About", "Team", "Merch", "Events"]
   },

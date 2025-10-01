@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Hero />
-      <FunEvents/>
       <Events />
+      <FunEvents/>
       <Highlights />
       <Sponsors />
     </div>

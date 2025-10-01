@@ -14,7 +14,6 @@ export default function Highlights() {
   const [isInView, setIsInView] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Intersection observer to only animate when in view
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -78,7 +77,7 @@ export default function Highlights() {
   return (
     <div
       ref={containerRef}
-      className="relative min-h-[35vh] w-full py-8 pb-0 sm:py-12 md:py-28 lg:py-40 bg-[linear-gradient(to_right,#1c3c2b,#03523C,#1c3c2b)] overflow-hidden"
+      className="relative min-h-[35vh] w-full py-8 pb-0 sm:py-12 md:py-28 lg:py-40 bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)] overflow-hidden"
     >
       <Image
               src={backgroundImageUrl}
@@ -162,7 +161,7 @@ export default function Highlights() {
                   alt={item.alt}
                   width={700} 
                   height={450} 
-                  className="object-contain rounded-lg w-full h-full"
+                  className="object-contain w-full h-full rounded-2xl"
                   priority={index === current}
                   loading={index === current ? "eager" : "lazy"}
                 />
