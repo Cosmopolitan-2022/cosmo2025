@@ -77,12 +77,16 @@ export default function Page() {
                 </button>
               ))}
             </div>
-          </div>
+          </div> 
 
           <div className="mt-3 flex justify-center lg:mt-4 xl:mt-5">
             <div className=" grid grid-cols-2 gap-4 md:gap-5 lg:gap-8 min-w-[280px] md:min-w-[320px] lg:min-w-[450px] xl:min-w-[500px]">
               {currentEvents.map((event) => (
-                <EventBox key={event.id} title={event.eventName} />
+                <EventBox
+                  key={event.id}
+                  title={event.eventName}
+                  description={event.alt}
+                />
               ))}
             </div>
           </div>
@@ -128,7 +132,7 @@ export default function Page() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
-                  height="24"
+                  height="24" 
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke={currentPage >= totalPages - 1 ? "#666" : "#03523C"}
