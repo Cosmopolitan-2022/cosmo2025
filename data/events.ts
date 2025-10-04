@@ -4,24 +4,6 @@ export const centerImageUrl = "/CenterDesign-min.png";
 
 export const intersectImageUrl = "/IntersectionImageURL.png";
 
-export const cardEvents = [
-  {
-    id: 1,
-    src: "/img1-min.png",
-    alt: "image 1",
-  },
-  {
-    id: 2,
-    src: "/img1-min.png",
-    alt: "image 2",
-  },
-  {
-    id: 3,
-    src: "/img1-min.png",
-    alt: "image 3",
-  },
-];
-
 export const events = {
   day1: [
     {
@@ -32,6 +14,7 @@ export const events = {
       height: 0,
       width: 0,
       className: "className",
+      photo: "https://res.cloudinary.com/dsjxx976j/image/upload/v1759586092/download_splwze.jpg"
     },
     {
       id: 2,
@@ -41,6 +24,7 @@ export const events = {
       height: 0,
       width: 0,
       className: "className",
+      photo: "https://res.cloudinary.com/dsjxx976j/image/upload/v1759586157/download_1_vecage.jpg"
     },
     {
       id: 3,
@@ -50,6 +34,7 @@ export const events = {
       height: 0,
       width: 0,
       className: "className",
+      photo: "https://res.cloudinary.com/dsjxx976j/image/upload/v1759586255/drama_tb8rmb.jpg"
     },
     {
       id: 4,
@@ -59,63 +44,11 @@ export const events = {
       height: 0,
       width: 0,
       className: "className",
-    },
-    {
-      id: 5,
-      eventName: "Literature day",
-      src: "src",
-      alt: "literature event",
-      height: 0,
-      width: 0,
-      className: "className",
-    },
-    {
-      id: 6,
-      eventName: "Photography",
-      src: "src",
-      alt: "photography event",
-      height: 0,
-      width: 0,
-      className: "className",
-    },
-    {
-      id: 7,
-      eventName: "Film screening",
-      src: "src",
-      alt: "film event",
-      height: 0,
-      width: 0,
-      className: "className",
-    },
-    {
-      id: 8,
-      eventName: "Comedy night",
-      src: "src",
-      alt: "comedy event",
-      height: 0,
-      width: 0,
-      className: "className",
+      photo: "https://res.cloudinary.com/dsjxx976j/image/upload/v1759585988/VASTRAKRITI_1_yc4nnh.jpg",
     },
   ],
   day2: [
-    {
-      id: 1,
-      eventName: "Sports day",
-      src: "src",
-      alt: "sports event",
-      height: 0,
-      width: 0,
-      className: "className",
-    },
-    {
-      id: 2,
-      eventName: "Gaming day",
-      src: "src",
-      alt: "gaming event",
-      height: 0,
-      width: 0,
-      className: "className",
-    },
+    
     {
       id: 3,
       eventName: "Food fest",
@@ -123,53 +56,7 @@ export const events = {
       alt: "Nothing brings people closer than delicious meals. It's not just about eating at the Food Fest; it's also about savoring cultures on a plate, exchanging tales, and discovering flavors. Every bite of everything from fiery street snacks to comforting traditional dinners opens up a whole new universe of possibilities.",
       height: 0,
       width: 0,
-    },
-    {
-      id: 4,
-      eventName: "Art day",
-      src: "src",
-      alt: "art event",
-      height: 0,
-      width: 0,
-      className: "className",
-    },
-  ],
-  day3: [
-    {
-      id: 1,
-      eventName: "Workshops",
-      src: "src",
-      alt: "workshop event",
-      height: 0,
-      width: 0,
-      className: "className",
-    },
-    {
-      id: 2,
-      eventName: "Talks",
-      src: "src",
-      alt: "talks event",
-      height: 0,
-      width: 0,
-      className: "className",
-    },
-    {
-      id: 3,
-      eventName: "Exhibitions",
-      src: "src",
-      alt: "exhibition event",
-      height: 0,
-      width: 0,
-      className: "className",
-    },
-    {
-      id: 4,
-      eventName: "Cultural night",
-      src: "src",
-      alt: "cultural event",
-      height: 0,
-      width: 0,
-      className: "className",
+      photo: "https://res.cloudinary.com/dsjxx976j/image/upload/v1759586299/download_2_aznnk5.jpg"
     },
   ],
 };
