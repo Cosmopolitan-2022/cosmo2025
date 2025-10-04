@@ -77,7 +77,7 @@ export default function Highlights() {
   return (
     <div
       ref={containerRef}
-      className="relative min-h-[35vh] w-full py-8 pb-0 sm:py-12 md:py-28 lg:py-40 bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)] overflow-hidden"
+      className="relative min-h-[35vh] w-full pt-2 pb-0 sm:py-12 md:py-16 lg:py-16 bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)] overflow-hidden"
     >
       <Image
               src={backgroundImageUrl}
@@ -92,19 +92,19 @@ export default function Highlights() {
           alt="cosmo"
           width={200}
           height={150}
-          className="object-cover opacity-100 w-18 sm:w-24 md:w-32 lg:w-44"
+          className="object-cover opacity-100 w-18 sm:w-24 md:w-30 lg:w-36"
           priority={false}
           loading="lazy"
         />
       </div>
 
-      <div className="hidden xl:block absolute bottom-[-30px] right-[0px] z-0 w-full sm:w-[200px] sm:inset-0 md:w-[1000px] lg:w-[1400px] items-center justify-center will-change-transform">
+      <div className="hidden xl:block absolute bottom-[-30px] right-[0px] z-0 w-full sm:inset-0 lg:w-[1150px] items-center justify-center will-change-transform">
         <Image
           src={centerDesign}
           alt="craft"
-          width={1600}
-          height={1600}
-          className="opacity-200 object-contain w-full h-auto translate-y-5 translate-x-8"
+          width={1150}
+          height={1150}
+          className="opacity-200 object-contain w-full h-auto translate-y-0 translate-x-40"
           priority={false}
           loading="lazy"
         />
