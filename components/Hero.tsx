@@ -22,8 +22,8 @@ function Hero() {
   return (
     <>
       <section
-        className="scroll-smooth relative -mt-1 pb-[200px] pt-[50px] md:pb-[117px] flex flex-col md:flex-row items-center overflow-visible justify-center bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)] w-full
-    [@media(min-width:350px)_and_(max-width:435px)]:pb-[100px]
+        className="scroll-smooth relative -mt-1 pb-[100px] pt-[50px] md:pb-[117px] flex flex-col   md:flex-row items-center overflow-visible justify-center bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)] w-full
+    [@media(min-width:350px)_and_(max-width:435px)]:pb-[30px]
     [@media(min-width:435px)_and_(max-width:520px)]:pb-[40px]
     [@media(min-width:520px)_and_(max-width:768px)]:pb-[0px]
     "
