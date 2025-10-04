@@ -160,29 +160,30 @@ function MemberCard({ name, description, personImg, bgImg }: MemberProps) {
   return (
     <div className="relative w-56 h-[300px] sm:w-100 sm:h-[408px] rounded-4xl overflow-hidden shadow-lg border-2 border-[#FFD9A4]">
       <div className="relative flex justify-center items-center h-auto bg-[linear-gradient(to_right,#082B20,#03523C,#082B20)]">
-        <Image
+        {/* <Image
           src={bgImg}
           alt="Mandala Background"
           width={200}
           height={200}
           className="absolute w-80 h-88 object-contain opacity-80"
-        />
+        /> */}
         <Image
           src={personImg}
           alt={name}
           width={300}
           height={200}
-          className="relative object-cover mt-0"
+          
+          className="relative w-full h-full object-cover mt-0"
         />
       </div>
 
       <div className="absolute bottom-0 w-full bg-gradient-to-t from-[#FFD9A4] to-[#FFFFFF] text-center pt-3 pb-6">
-        <h4 className="text-2xl sm:text-4xl font-montserrat font-semibold text-[#03523C]">
+        <h4 className="text-xl sm:text-2xl font-montserrat font-semibold text-[#03523C]">
           {name}
         </h4>
-        <p className="text-xl sm:text-3xl font-montserrat font-normal text-[#03523C]">
+        {/* <p className="text-xl sm:text-3xl font-montserrat font-normal text-[#03523C]">
           {description}
-        </p>
+        </p> */}
       </div>
       
     </div>

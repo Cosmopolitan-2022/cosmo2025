@@ -62,7 +62,7 @@ export function getTeamData() {
           subtitle: "TECHNICAL",
           members: [
             { name: "DEBAJYOTI CHATTERJEE", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541713/Debajyoti_CoreTeam_Technical_-_Luffy_k6brdn.jpg", bgImg, propImg },
-            { name: "CHINNARI NARASHIMHA PRASAD", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541643/ChinnariNarashimha_CoreTeam_Technical_-_Chinnari_Narashimha_lhx5l1.jpg", bgImg, propImg },
+            { name: "NARASHIMHA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759600165/WhatsApp_Image_2025-10-04_at_23.18.38_hjcfdj.jpg", bgImg, propImg },
             { name: "SUJAL KUMAR AGARWAL", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759590000/WhatsApp_Image_2025-10-04_at_20.23.32_zfdb3b.jpg", bgImg, propImg },
             { name: "SOUMADEEP SENGUPTA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541774/Soumadeep_Coreteam_Technical_-_soumadeep_sengupta_d6xvm5.jpg", bgImg, propImg },
 
@@ -71,11 +71,11 @@ export function getTeamData() {
         {
           subtitle: "DESIGN",
           members: [
-            { name: "T.SATISH KUMAR PATRO ", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541641/Satish_CoreTeam_Creative_-_Satish_pfahno.jpg", bgImg, propImg },
-
+            
             { name: "ISHITA AGRAWAL", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541823/ishita_coreteam_designer_-_Ishita_Agrawal_hyqahp.jpg", bgImg, propImg },
             { name: "AYUSH YADAV", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541698/Ayush_Coreteam_Creative_-_Ayush_Yadav_klawww.jpg", bgImg, propImg },
             { name: "DEBASISH ARORA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541766/Devashish_coreteam_creative_-_Devashish_Arora_qm9bov.jpg", bgImg, propImg },
+            { name: "T.SATISH KUMAR PATRO ", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541641/Satish_CoreTeam_Creative_-_Satish_pfahno.jpg", bgImg, propImg },
 
           ]
         },
