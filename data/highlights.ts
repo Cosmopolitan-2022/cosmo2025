@@ -21,26 +21,41 @@ export const carouselImage = [
   },
   {
     id: 3,
+    src: "/highlights/o1.jpg",
+    alt: "o1",
+  },
+  {
+    id: 4,
     src: "/highlights/prize3.jpg",
     alt: "p3",
   },
   {
-    id: 4,
+    id: 5,
     src: "/highlights/prize4.jpg",
     alt: "p4",
   },
   {
-    id: 5,
+    id: 6,
+    src: "/highlights/o2.jpg",
+    alt: "o2",
+  },
+  {
+    id: 7,
     src: "/highlights/prize5.jpg",
     alt: "p5",
   },
   {
-    id: 6,
+    id: 8,
     src: "/highlights/prize6.jpg",
     alt: "p6",
   },
   {
-    id: 7,
+    id: 9,
+    src: "/highlights/o3.jpg",
+    alt: "o3",
+  },
+  {
+    id: 10,
     src: "/highlights/prize7.jpg",
     alt: "p7",
   },
