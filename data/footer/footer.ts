@@ -15,7 +15,7 @@ export const footerData = {
     cosmo: {
         alt: "logo",
 
-        src: "https://res.cloudinary.com/du5qoczcn/image/upload/v1756906895/Group_1000001402_l5xnkn.png"
+        src: "/cosmologo.svg",
     },
 
     information: [
