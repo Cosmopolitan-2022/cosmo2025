@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 
 import { cn } from "@/app/lib/utils";
 
@@ -65,20 +66,20 @@ function FunEvents() {
           <div className="flex flex-col sm:flex-row h-[600px] sm:h-[300px] md:h-[350px] lg:h-[450px] justify-between w-full max-w-[300px] sm:max-w-[74vw] xl:max-w-4xl rounded-2xl p-1">
             <div className="h-[40%] sm:h-full sm:w-1/2 ">
               <div className="relative w-full h-full bg-white rounded-xl overflow-hidden">
-                {/* <Image
+                <Image
                   src={activeEvent.src}
                   alt={activeEvent.alt}
                   fill
                   className="object-cover transition-all duration-500"
-                /> */}
+                />
               </div>
             </div>
 
             <div className="h-[55%] sm:h-full sm:w-1/2 relative sm:pl-5 sm:py-3 ">
-              <h2 className=" text-4xl text-center sm:text-left md:text-5xl lg:text-7xl font-bold text-[#FFD9A4] sm:mb-4 font-montserrat">
+              <h2 className=" text-3xl text-center sm:text-left md:text-4xl lg:text-5xl font-bold text-[#FFD9A4] sm:mb-4 font-montserrat">
                 {activeEvent.title}
               </h2>
-              <p className="text-[#FFD9A4] mt-2 md:mt-6 text-xl text-center sm:text-left sm:text-2xl lg:text-4xl mb-2 font-semibold font-montserrat">
+              <p className="text-[#FFD9A4] mt-2 md:mt-6 text-base text-center sm:text-left sm:text-xl lg:text-2xl mb-2 font-semibold font-montserrat">
                 {activeEvent.date}
               </p>
               <p className="text-white text-center md:text-[16px] text-[12px] lg:text-2xl sm:text-justify font-light sm:leading-none px-2 sm:px-0 font-montserrat pt-2">
