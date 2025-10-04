@@ -18,9 +18,9 @@ function Footer() {
             <Image
               src={cosmo.src}
               alt={cosmo.alt}
-              width={320}
-              height={172}
-              className=" hidden md:inline-block w-[300px] h-[140px] mt-2"
+              width={400}
+              height={170}
+              className=" hidden md:inline-block w-[400px] h-[170px] mt-2"
             />
           </div>
           <div className="flex w-full  flex-col md:flex-row gap-3 justify-between ">
