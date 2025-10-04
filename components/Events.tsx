@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { useState, useEffect, useCallback } from "react";
 import { backgroundImageUrl } from "@/data/events";
-import { cardEvents } from "@/data/events";
 import { centerImageUrl } from "@/data/events";
 import { intersectImageUrl } from "@/data/events";
 import useEmblaCarousel from "embla-carousel-react";
@@ -10,8 +9,10 @@ import { events } from "@/data/events";
 
 export default function Events() {
   const [currentIndex, setCurrentIndex] = useState(0); // mobile index
-  // Flatten events data (day1 + day2 + day3) for desktop carousel mapping
-  const flattenedEvents = [...events.day1, ...events.day2, ...events.day3];
+  const [mobileOverlayOpen, setMobileOverlayOpen] = useState(false);
+
+  // Combine all available days (day3 not present in data file currently)
+  const flattenedEvents = [...events.day1, ...events.day2];
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: "start",
     loop: false,
@@ -34,14 +35,16 @@ export default function Events() {
   const scrollPrev = () => emblaApi && emblaApi.scrollPrev();
   const scrollNext = () => emblaApi && emblaApi.scrollNext();
 
+  const totalMobile = flattenedEvents.length;
+
   const nextCard = () => {
-    setCurrentIndex((prev) => (prev + 1) % cardEvents.length);
+    setCurrentIndex((prev) => (prev + 1) % totalMobile);
+    setMobileOverlayOpen(false);
   };
 
   const prevCard = () => {
-    setCurrentIndex(
-      (prev) => (prev - 1 + cardEvents.length) % cardEvents.length
-    );
+    setCurrentIndex((prev) => (prev - 1 + totalMobile) % totalMobile);
+    setMobileOverlayOpen(false);
   };
 
   return (
@@ -108,16 +111,48 @@ export default function Events() {
               </svg>
             </button>
 
-            {/* Single card for mobile */}
+            {/* Single card for mobile with touch pop-out */}
             <div className="w-3/4 max-w-xs mx-auto">
-              <div className="rounded-xl bg-white/10 border-[3px] border-[#FFD9A4] h-80 relative cursor-pointer will-change-transform transition-[transform,box-shadow,background-color] duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-[#FFD9A4]/20 hover:bg-white/20">
+              <div
+                className="group rounded-xl bg-white/10 border-[3px] border-[#FFD9A4] h-80 relative cursor-pointer will-change-transform transition-[transform,box-shadow,background-color] duration-300 ease-in-out active:scale-105 focus-within:scale-105"
+                onClick={() => setMobileOverlayOpen((o) => !o)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    setMobileOverlayOpen((o) => !o);
+                  }
+                  if (e.key === "Escape") setMobileOverlayOpen(false);
+                }}
+                aria-expanded={mobileOverlayOpen}
+                aria-label={`${flattenedEvents[currentIndex].eventName} details`}
+              >
                 <Image
-                  src={cardEvents[currentIndex].src}
-                  alt={cardEvents[currentIndex].alt}
+                  src={
+                    flattenedEvents[currentIndex].photo || "/img1-min.png"
+                  }
+                  alt={`${flattenedEvents[currentIndex].eventName} image`}
                   fill
-                  className="rounded-xl object-contain p-2"
+                  className={`rounded-xl object-contain p-2 transition-opacity duration-300 ${
+                    mobileOverlayOpen ? "opacity-0" : "opacity-100"
+                  }`}
                   priority={true}
                 />
+                {mobileOverlayOpen && (
+                  <div className="absolute -inset-3 rounded-2xl bg-[linear-gradient(135deg,#03523C_0%,#082B20_65%)] border border-[#FFD9A4]/70 shadow-[0_0_25px_-5px_rgba(255,217,164,0.45)] p-4 flex flex-col text-[#FFD9A4]">
+                    <h3 className="font-traditional font-semibold text-base mb-2 text-center tracking-wide">
+                      {flattenedEvents[currentIndex].eventName}
+                    </h3>
+                    <div className="w-10 h-1 bg-[#FFD9A4]/70 rounded mx-auto mb-3" />
+                    <p
+                      className="text-[0.65rem] leading-relaxed overflow-y-auto hide-scrollbar flex-1 pr-1"
+                      tabIndex={-1}
+                    >
+                      {flattenedEvents[currentIndex].alt}
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
 
@@ -145,11 +180,14 @@ export default function Events() {
 
           {/* Dots indicator */}
           <div className="flex justify-center mt-4 space-x-2">
-            {cardEvents.map((_, index) => (
+            {flattenedEvents.map((_, index) => (
               <button
                 key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                onClick={() => {
+                  setCurrentIndex(index);
+                  setMobileOverlayOpen(false);
+                }}
+                className={`w-2.5 h-2.5 rounded-full transition-all duration-200 ${
                   index === currentIndex
                     ? "bg-[#FFD9A4]"
                     : "bg-white/30 hover:bg-white/50"
@@ -160,7 +198,7 @@ export default function Events() {
           </div>
         </div>
 
-        {/* Desktop Embla carousel (exactly 3 visible) */}
+        {/* Desktop Embla carousel */}
         <div className="hidden sm:block px-4 md:px-6 lg:px-8 xl:px-12">
           <div className="relative max-w-[82rem] mx-auto">
             {/* Nav buttons */}
@@ -210,8 +248,7 @@ export default function Events() {
             <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex gap-4 md:gap-6 lg:gap-8 xl:gap-10">
                 {flattenedEvents.map((evt, index) => {
-                  // Fallback image mapping since evt.src currently placeholder "src"
-                  const imageSource = cardEvents[index % cardEvents.length].src;
+                  const imageSource = evt.photo || "/img1-min.png";
                   const imageAlt = `${evt.eventName} image`;
                   return (
                     <div
@@ -228,9 +265,8 @@ export default function Events() {
                           (e.currentTarget as HTMLElement).blur();
                         }
                         if (e.key === "Enter" || e.key === " ") {
-                          // Prevent page scroll on Space
                           e.preventDefault();
-                          // Focus inside overlay paragraph for reading
+
                           const p = e.currentTarget.querySelector("p");
                           if (p) (p as HTMLElement).focus();
                         }
