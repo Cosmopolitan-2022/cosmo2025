@@ -34,15 +34,15 @@ export const footerData = {
             id: 1,
             type: "email",
             label: "Email",
-            value: "cosmonitr@gmail.com",
-            href: "mailto:cosmonitr@gmail.com"
+            value: "cosmo.nitr@gmail.com",
+            href: "mailto:cosmo.nitr@gmail.com"
         },
         {
             id: 2,
             type: "phone",
             label: "Phone",
-            value: "9827859469",
-            href: "tel:9827859469"
+            value: "8260706922",
+            href: "tel:8260706922"
         }
     ],
     social: [
@@ -51,19 +51,19 @@ export const footerData = {
             
             src: "https://res.cloudinary.com/du5qoczcn/image/upload/v1757099353/fbsvg_iedevj.svg",
             alt: " facebook icon",
-            href: "https://www.facebook.com/"
+            href: "https://www.facebook.com/cosmonitrkl"
         },
         {
             id: 2,
             src:"https://res.cloudinary.com/du5qoczcn/image/upload/v1757099353/ytsvg_hirfs8.svg",
             alt: " youtube icon",
-            href: "https://www.youtube.com/"
+            href: "https://www.youtube.com/@CosmoNITR"
         },
         {
             id: 3,
             src:"https://res.cloudinary.com/du5qoczcn/image/upload/v1757099352/igsvg_k2oath.svg",
             alt: " instagram icon",
-            href: "https://www.instagram.com/"
+            href: "https://www.instagram.com/cosmo.nitr"
         }
     ],
 
