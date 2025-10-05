@@ -27,7 +27,20 @@ export default function Teams() {
 
         <Section title={teamData.ourPatron.title} members={teamData.ourPatron.members} forcePerView={1} />
 
-        <Section title={teamData.sacOfficials.title} members={teamData.sacOfficials.members} />
+        <div className="w-full text-center mb-16">
+         <h2 className="text-4xl font-traditional sm:text-5xl md:mt-20 md:text-6xl xl:text-7xl text-[#FFD9A4] md:mb-25">
+            {teamData.sacOfficials.title}
+          </h2>
+            {teamData.sacOfficials.sections.map((sub, idx) => (
+          <div key={idx} className="mb-12">
+          <h3 className="text-xl sm:text-2xl md:text-5xl mb-10 mt-10 md:mb-20 md:mt-25 tracking-widest font-traditional text-[#FFD9A4]">
+            {sub.subtitle}
+          </h3>
+        <Section title="" members={sub.members} />
+        </div>
+        ))}
+        </div>
+
 
         <Section title={teamData.convener.title} members={teamData.convener.members} />
 
@@ -159,7 +172,7 @@ function Section({
 function MemberCard({ name, description, personImg, bgImg }: MemberProps) {
   return (
     <div className="relative w-56 h-[300px] sm:w-100 sm:h-[408px] rounded-4xl overflow-hidden shadow-lg border-2 border-[#FFD9A4]">
-      <div className="relative flex justify-center items-center h-auto bg-[linear-gradient(to_right,#082B20,#03523C,#082B20)]">
+      <div className="relative flex justify-center items-center h-full md:h-auto bg-[linear-gradient(to_right,#082B20,#03523C,#082B20)]">
         {/* <Image
           src={bgImg}
           alt="Mandala Background"
@@ -173,7 +186,7 @@ function MemberCard({ name, description, personImg, bgImg }: MemberProps) {
           width={300}
           height={200}
           
-          className="relative w-full h-full object-contain mt-0"
+          className="relative w-full h-full object-cover mt-0"
         />
       </div>
 

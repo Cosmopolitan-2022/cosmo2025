@@ -48,12 +48,21 @@ export function getTeamData() {
     },
     sacOfficials: {
       title: "SAC OFFICIALS",
-      members: [
-        { name: "COSMO1", description: "WORKING", personImg, bgImg, propImg },
-        { name: "COSMO2", description: "WORKING", personImg, bgImg, propImg },
-        { name: "COSMO3", description: "WORKING", personImg, bgImg, propImg },
-        { name: "COSMO4", description: "WORKING", personImg, bgImg, propImg }
+      sections:[
+        {
+          subtitle:"SAC President",
+          members: [
+        { name: "RAJEEV KUMAR PANDA", description: "WORKING", personImg:"https://res.cloudinary.com/dmah92jqh/image/upload/v1759653950/94679_s4fqlq.jpg", bgImg, propImg },
       ]
+    },
+    {
+          subtitle:"FMS Vice President",
+          members:[
+        { name: "KUMUD KANT MEHTA", description: "WORKING", personImg: "https://res.cloudinary.com/dmah92jqh/image/upload/v1759653951/WhatsApp_Image_2025-10-05_at_12.26.55_PM_u3zptm.jpg", bgImg, propImg },
+        { name: "SIVARAMAN J", description: "WORKING", personImg:"https://res.cloudinary.com/dmah92jqh/image/upload/v1759653950/WhatsApp_Image_2025-10-05_at_12.26.56_PM_l17zaf.jpg", bgImg, propImg },
+      ]
+    }
+    ]
     },
     coreTeam: {
       title: "CORE TEAM",
@@ -62,7 +71,7 @@ export function getTeamData() {
           subtitle: "TECHNICAL",
           members: [
             { name: "DEBAJYOTI CHATTERJEE", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541713/Debajyoti_CoreTeam_Technical_-_Luffy_k6brdn.jpg", bgImg, propImg },
-            { name: "NARASHIMHA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759600165/WhatsApp_Image_2025-10-04_at_23.18.38_hjcfdj.jpg", bgImg, propImg },
+            { name: "NARASHIMHA", description: "WORKING", personImg: "https://res.cloudinary.com/dmah92jqh/image/upload/v1759655143/copy-ChinnariNarashimha_CoreTeam_Technical_-_Chinnari_Narashimha_fj4i5g.jpg", bgImg, propImg },
             { name: "SUJAL KUMAR AGARWAL", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759590000/WhatsApp_Image_2025-10-04_at_20.23.32_zfdb3b.jpg", bgImg, propImg },
             { name: "SOUMADEEP SENGUPTA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541774/Soumadeep_Coreteam_Technical_-_soumadeep_sengupta_d6xvm5.jpg", bgImg, propImg },
 
@@ -148,7 +157,7 @@ export function getTeamData() {
         {
           subtitle: "SPONSORSHIP",
           members: [
-            { name: "AMLAN PRATEEK PANDA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541666/AMLAN_coreteam_spons_-_AMLAN_PRATEEK_PANDA_vslmxy.png", bgImg, propImg },
+            { name: "AMLAN PRATEEK PANDA", description: "WORKING", personImg: "https://res.cloudinary.com/dmah92jqh/image/upload/v1759654467/copy-AMLAN_coreteam_spons_-_AMLAN_PRATEEK_PANDA_as1pqf.png", bgImg, propImg },
             { name: "ANSHUMAN PANDA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541675/Anshuman_CoreTeam_Sponsorship_-_Anshuman_mjbfwq.jpg", bgImg, propImg },
 
             
@@ -177,7 +186,7 @@ export function getTeamData() {
           subtitle: "TRAVEL AND LOGISTICS",
           members: [
             { name: "CH GYANESWAR RAO", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541687/IMG_7559_-_Gyaneswar_Ch_q7xw8m.jpg", bgImg, propImg },
-            { name: "SWAYNSU MOHANTY", description: "WORKING", personImg: "https://res.cloudinary.com/dmah92jqh/image/upload/v1759648001/IMG-20250728-WA0014_-_Swaynsu_Mohanty_c_ngqpwr.jpg", bgImg, propImg },
+            { name: "SWAYNSU MOHANTY", description: "WORKING", personImg: "https://res.cloudinary.com/dmah92jqh/image/upload/v1759655533/IMG-20250728-WA0014_-_Swaynsu_Mohanty_lhtzli.jpg", bgImg, propImg },
             { name: "ADITYA ADHIKARI", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541767/Aaditya_Adhikari_Core_team__Travel_and_Logistics_-_Aaditya_Adhikari_qti9r4.jpg", bgImg, propImg },
 
           ]
