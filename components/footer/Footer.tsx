@@ -33,7 +33,7 @@ function Footer() {
         <div className="w-full mt-2">
           <h1 className="text-center text-[10px] md:text-[12px] font-semibold uppercase text-[#03523C] leading-normal font-montserrat">
             {" "}
-            2025 © Webwiz X Cosomo. All rights reserved.
+            2025 © Webwiz X Cosmo. All rights reserved.
           </h1>
         </div>
       </div>

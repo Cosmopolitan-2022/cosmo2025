@@ -39,10 +39,10 @@ export const footerData = {
         },
         {
             id: 2,
-            type: "phone",
-            label: "Phone",
-            value: "8260706922",
-            href: "tel:8260706922"
+            type: "email",
+            label: "Email",
+            value: "tmefsponsorship.nitrkl@gmail.com",
+            href: "mailto:tmefsponsorship.nitrkl@gmail.com"
         }
     ],
     social: [
