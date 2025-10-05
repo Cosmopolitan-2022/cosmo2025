@@ -173,7 +173,7 @@ function MemberCard({ name, description, personImg, bgImg }: MemberProps) {
           width={300}
           height={200}
           
-          className="relative w-full h-full object-cover mt-0"
+          className="relative w-full h-full object-contain mt-0"
         />
       </div>
 

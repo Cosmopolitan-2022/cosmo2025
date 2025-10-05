@@ -91,7 +91,7 @@ function MerchCard({ title, description, price, images }: MerchCardProps) {
 
 export default function Merch() {
   return (
-    <div className="w-full min-h-[1650px] pt-10 pb-24 bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)] relative">
+    <div className="w-full min-h-[1650px] pt-10 pb-24 bg-[linear-gradient(90deg,#082B20_1.81%,#03523C_50.72%,#082B20_99.63%)] relative overflow-x-hidden">
       <Image
         src={phone}
         alt="pattern"

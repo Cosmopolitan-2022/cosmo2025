@@ -73,9 +73,9 @@ export function getTeamData() {
           members: [
             
             { name: "ISHITA AGRAWAL", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541823/ishita_coreteam_designer_-_Ishita_Agrawal_hyqahp.jpg", bgImg, propImg },
-            { name: "AYUSH YADAV", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541698/Ayush_Coreteam_Creative_-_Ayush_Yadav_klawww.jpg", bgImg, propImg },
-            { name: "DEBASISH ARORA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541766/Devashish_coreteam_creative_-_Devashish_Arora_qm9bov.jpg", bgImg, propImg },
-            { name: "T.SATISH KUMAR PATRO ", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541641/Satish_CoreTeam_Creative_-_Satish_pfahno.jpg", bgImg, propImg },
+            { name: "AYUSH YADAV", description: "WORKING", personImg: "https://res.cloudinary.com/dmah92jqh/image/upload/v1759647898/copy-Ayush_Coreteam_Creative_-_Ayush_Yadav_apatih.jpg", bgImg, propImg },
+            { name: "DEBASISH ARORA", description: "WORKING", personImg: "https://res.cloudinary.com/dmah92jqh/image/upload/v1759647904/copy-Devashish_coreteam_creative_-_Devashish_Arora_mjwwvs.jpg", bgImg, propImg },
+            { name: "T.SATISH KUMAR PATRO ", description: "WORKING", personImg: "https://res.cloudinary.com/dmah92jqh/image/upload/v1759648769/Satish_CoreTeam_Creative_-_Satish_amuc9h.jpg", bgImg, propImg },
 
           ]
         },
@@ -122,7 +122,7 @@ export function getTeamData() {
 
           members: [
             { name: "NIKHIL KUMAR DALAI", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541693/Nikhil_Coreteam_Booking_Permissions_-_Nikhil_Dalai_sbn17t.png", bgImg, propImg },
-            { name: "PRITAM RAJ MAHAPATRO", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541830/PRITAM_CORE_TEAM_BOOKINGS_AND_PERMISSION_-_Pritam_Raj_mm5aa4.jpg", bgImg, propImg },
+            { name: "PRITAM RAJ MAHAPATRO", description: "WORKING", personImg: "https://res.cloudinary.com/dmah92jqh/image/upload/v1759648008/copy-PRITAM_CORE_TEAM_BOOKINGS_AND_PERMISSION_-_Pritam_Raj_ey6cvy.jpg", bgImg, propImg },
           ]
         },
         {
@@ -139,7 +139,7 @@ export function getTeamData() {
 
           members: [
             { name: "TUSAR KANTA MAHARANA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541664/Tusar_Coreteam_Requirements_-_Tushar_Kanta_Maharana_bvp8jj.jpg", bgImg, propImg },
-            { name: "DEEPAK PANIGRAHI", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541751/Deepak_secretary_-_Deepak_Kumar_aehax2.jpg", bgImg, propImg },
+            { name: "DEEPAK PANIGRAHI", description: "WORKING", personImg: "https://res.cloudinary.com/dmah92jqh/image/upload/v1759647781/Deepak_CoreTeam_RequirementandManagment_-_Dipu_Panigrahi_cfbfvi.jpg", bgImg, propImg },
             { name: "ASISH BEHERA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541692/Asish_Coreteam_Requirements_-_Asish_Behera_yfyk0w.png", bgImg, propImg },
 
             { name: "DEEPAK BEHERA ", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541692/Deepak__Coreteam__Requirements_page-0001_-_Deepak_Behera_nr3qhb.jpg", bgImg, propImg },
@@ -177,7 +177,7 @@ export function getTeamData() {
           subtitle: "TRAVEL AND LOGISTICS",
           members: [
             { name: "CH GYANESWAR RAO", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541687/IMG_7559_-_Gyaneswar_Ch_q7xw8m.jpg", bgImg, propImg },
-            { name: "SWAYNSU MOHANTY", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541663/IMG-20250728-WA0014_-_Swaynsu_Mohanty_iwbxxc.jpg", bgImg, propImg },
+            { name: "SWAYNSU MOHANTY", description: "WORKING", personImg: "https://res.cloudinary.com/dmah92jqh/image/upload/v1759648001/IMG-20250728-WA0014_-_Swaynsu_Mohanty_c_ngqpwr.jpg", bgImg, propImg },
             { name: "ADITYA ADHIKARI", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541767/Aaditya_Adhikari_Core_team__Travel_and_Logistics_-_Aaditya_Adhikari_qti9r4.jpg", bgImg, propImg },
 
           ]
