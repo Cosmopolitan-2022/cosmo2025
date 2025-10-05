@@ -1,4 +1,3 @@
-import { s } from "motion/react-client"
 
 export const music =[
 {
