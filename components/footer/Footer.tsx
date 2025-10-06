@@ -20,7 +20,7 @@ function Footer() {
               alt={cosmo.alt}
               width={400}
               height={170}
-              className=" hidden md:inline-block w-[400px] h-[170px] mt-2"
+              className=" hidden md:inline-block w-[400px] h-[145px] lg:h-[167px] "
             />
           </div>
           <div className="flex w-full  flex-col md:flex-row gap-3 justify-between ">
