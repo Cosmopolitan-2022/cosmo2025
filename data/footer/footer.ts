@@ -64,6 +64,12 @@ export const footerData = {
             src:"https://res.cloudinary.com/du5qoczcn/image/upload/v1757099352/igsvg_k2oath.svg",
             alt: " instagram icon",
             href: "https://www.instagram.com/cosmo.nitr"
+        },
+        {
+            id:4,
+            src:"https://res.cloudinary.com/du5qoczcn/image/upload/v1759791715/LD_zu27sq.svg",
+            alt: " linkedin icon",
+            href: "https://www.linkedin.com/company/cosmo-nitr/"
         }
     ],
 

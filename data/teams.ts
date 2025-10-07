@@ -27,23 +27,12 @@ export function getTeamData() {
   const arrowback = "https://res.cloudinary.com/djqgs2pet/image/upload/v1757172557/arrow_prev_cumlyo.svg";
 
   return {
-    ourPatron: {
-      title: "OUR PATRON",
-      members: [
-        { name: "COSMO1", description: "WORKING", personImg, bgImg, propImg },
-        { name: "COSMO2", description: "WORKING", personImg, bgImg, propImg },
-        { name: "COSMO3", description: "WORKING", personImg, bgImg, propImg },
-        { name: "COSMO4", description: "WORKING", personImg, bgImg, propImg }
-
-      ]
-    },
+     
     convener: {
       title: "CONVENER",
       members: [
-        { name: "COSMO1", description: "WORKING", personImg, bgImg, propImg },
-        { name: "COSMO2", description: "WORKING", personImg, bgImg, propImg },
-        { name: "COSMO3", description: "WORKING", personImg, bgImg, propImg },
-        { name: "COSMO4", description: "WORKING", personImg, bgImg, propImg }
+        { name: "NILANCHAL NAHAK", description: "WORKING", personImg:"https://res.cloudinary.com/du5qoczcn/image/upload/v1759795453/Nilanchal_Nahak_general_convenor_-_nilanchal_nahak_1_qeg29o.png", bgImg, propImg },
+        { name: "CHINMAYA KUMAR NAIK", description: "WORKING", personImg:"https://res.cloudinary.com/du5qoczcn/image/upload/v1759795064/ChinmayaKumarNaik_convener_-_Chinmay_Kumar_Naik_tbmta3.jpg", bgImg, propImg },
       ]
     },
     sacOfficials: {
@@ -81,33 +70,38 @@ export function getTeamData() {
           subtitle: "DESIGN",
           members: [
             
-            { name: "ISHITA AGRAWAL", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541823/ishita_coreteam_designer_-_Ishita_Agrawal_hyqahp.jpg", bgImg, propImg },
+            { name: "T.SATISH KUMAR PATRO ", description: "WORKING", personImg: "https://res.cloudinary.com/dmah92jqh/image/upload/v1759648769/Satish_CoreTeam_Creative_-_Satish_amuc9h.jpg", bgImg, propImg },
             { name: "AYUSH YADAV", description: "WORKING", personImg: "https://res.cloudinary.com/dmah92jqh/image/upload/v1759647898/copy-Ayush_Coreteam_Creative_-_Ayush_Yadav_apatih.jpg", bgImg, propImg },
             { name: "DEBASISH ARORA", description: "WORKING", personImg: "https://res.cloudinary.com/dmah92jqh/image/upload/v1759647904/copy-Devashish_coreteam_creative_-_Devashish_Arora_mjwwvs.jpg", bgImg, propImg },
-            { name: "T.SATISH KUMAR PATRO ", description: "WORKING", personImg: "https://res.cloudinary.com/dmah92jqh/image/upload/v1759648769/Satish_CoreTeam_Creative_-_Satish_amuc9h.jpg", bgImg, propImg },
-
+            { name: "VIKRAM SINGH PATEL", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759793270/Vikram_coreteam_creative_-_vikram_singh_1_fbthi2.jpg", bgImg, propImg },
+            { name: "SANTOSH", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759793265/Santosh_core_creative_2_page-0001_-_Santosh_Patra_cv0xub.jpg", bgImg, propImg },
+            
           ]
         },
         {
           subtitle: "EVENT MANAGEMENT",
           members: [
+            { name: "SASWAT MISHRA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759795645/SaswatMishra_CoreTeam_EM_-_Stradd_Noux_2_npy46m.jpg", bgImg, propImg },
+            { name: "SAI KUMAR", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759794093/sai_kumar_core_team_event_management_-_Sanapala_Sai_Kumar_uu6aka.png", bgImg, propImg },
             { name: "SUDEEP KUMAR SWAIN ", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759585535/1000140697_9000_-_Sudiip_kumar_Swaain_xafmpt.jpg", bgImg, propImg },
             { name: "CHIDAMBAR SWAIN ", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541711/Chidambar_Coreteam_Event_Management_-_Chidambar_Swain_ic6can.jpg", bgImg, propImg },
             { name: "ADITYA PANDA ", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541824/IMG_20240908_021100_-_Aditya_Panda_u5djc7.jpg", bgImg, propImg },
-
-
-
+            { name: "VISHESH JAIN", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759793265/VisheshJain_CoreTeam_EventManagement_-_Vishesh_Jain_osnqcp.jpg", bgImg, propImg },
+            
+            
+            
             { name: "AYUSH JAISWAL", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541762/Ayush_Jaiswal_Core_Team_EM_-_Ayush_Jaiswal_fkgue3.webp", bgImg, propImg },
-
+            
             { name: "SALONI BEHERA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541709/Saloni_Coreteam_EM_-_Saloni_Behera_gtxvn6.png", bgImg, propImg },
-
+            
             { name: "RUPAYAN DUTTA ", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541673/Rupayan_Coreteam_Eventmanagement_-_Rupayan_Dutta_hve2c9.png", bgImg, propImg },
+            { name: "ISHITA AGRAWAL", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541823/ishita_coreteam_designer_-_Ishita_Agrawal_hyqahp.jpg", bgImg, propImg },
 
 
           ]
         },
         {
-          subtitle: "GUEST  HOSPITALITY",
+          subtitle: "GUEST AND  HOSPITALITY",
           members: [
             { name: "JYOTI SETHI", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541643/Jyoti_Core_team_Guest_hospitality_-_jyoti_sethi_fu2ier.jpg", bgImg, propImg },
             { name: "P BINDUSHREE DORA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541641/Bindushree_Coreteam_Guest_Hospitality_-_P_BINDUSHREE_DORA_sqyqy6.jpg", bgImg, propImg },
@@ -121,6 +115,7 @@ export function getTeamData() {
 
             { name: "PRADYUSH PARIDA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541729/Pradyush_core_team_workshop_performance_-_Pradyush_Parida_apm5so.jpg", bgImg, propImg },
             { name: "ROHIT KUMAR SAHU ", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541700/ROHIT_CORETEAM_WORKSHOPANDPERFORMANCEMANAGEMENT_-_Rohit_Kumar_sahu_yjr8mg.jpg", bgImg, propImg },
+            { name:"SAI KISHAN " , description:"WORKING", personImg:"https://res.cloudinary.com/du5qoczcn/image/upload/v1759791718/Picsart_25-03-29_19-09-52-565_diiit8.jpg", bgImg, propImg},
             { name: "HIMANSU NAHAK ", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541681/Himansu_Coreteam_Workshop_And_Performance_-_Himansu_Nahak_iz7mlh.png", bgImg, propImg },
             { name: "ANKIT MEWADA  ", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541789/Ankit_CoreTeam_Workshop_-_Ankit_Mewada_iru8mz.jpg", bgImg, propImg }
           ]
@@ -150,6 +145,7 @@ export function getTeamData() {
             { name: "TUSAR KANTA MAHARANA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541664/Tusar_Coreteam_Requirements_-_Tushar_Kanta_Maharana_bvp8jj.jpg", bgImg, propImg },
             { name: "DEEPAK PANIGRAHI", description: "WORKING", personImg: "https://res.cloudinary.com/dmah92jqh/image/upload/v1759647781/Deepak_CoreTeam_RequirementandManagment_-_Dipu_Panigrahi_cfbfvi.jpg", bgImg, propImg },
             { name: "ASISH BEHERA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541692/Asish_Coreteam_Requirements_-_Asish_Behera_yfyk0w.png", bgImg, propImg },
+            { name: "TRIPATTI", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759791718/WhatsApp_Image_2025-10-06_at_23.00.38_i7yjpe.jpg", bgImg, propImg },
 
             { name: "DEEPAK BEHERA ", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541692/Deepak__Coreteam__Requirements_page-0001_-_Deepak_Behera_nr3qhb.jpg", bgImg, propImg },
           ]
@@ -159,6 +155,7 @@ export function getTeamData() {
           members: [
             { name: "AMLAN PRATEEK PANDA", description: "WORKING", personImg: "https://res.cloudinary.com/dmah92jqh/image/upload/v1759654467/copy-AMLAN_coreteam_spons_-_AMLAN_PRATEEK_PANDA_as1pqf.png", bgImg, propImg },
             { name: "ANSHUMAN PANDA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541675/Anshuman_CoreTeam_Sponsorship_-_Anshuman_mjbfwq.jpg", bgImg, propImg },
+            { name:"RUDRA NARAYAN", description:"WORKING" , personImg:"https://res.cloudinary.com/du5qoczcn/image/upload/v1759791717/WhatsApp_Image_2025-10-06_at_21.04.24_l6chcr.jpg", bgImg, propImg},
 
             
             { name: "SUBHAM KUMAR SAHOO", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541774/1000266957_-_SUBHAM_qm7p7z.jpg", bgImg, propImg },
@@ -205,7 +202,9 @@ export function getTeamData() {
             { name: "KISHAN KUMAR BEHERA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541780/kishan_core_funevents_-_Kishan_Kumar_Behera_xkncmv.jpg", bgImg, propImg },
             { name: "RUSTAM KUMAR", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541658/IMG_20241027_193237241_PORTRAIT_-_RUSTAM_KUAMR_dhadui.jpg", bgImg, propImg },
 
-            { name: "ASISH KUMAR NATH", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541724/Asish_coreteam_funevents_-_Kumar_Asish_tbonef.jpg", bgImg, propImg }
+            { name: "ASISH KUMAR NATH", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541724/Asish_coreteam_funevents_-_Kumar_Asish_tbonef.jpg", bgImg, propImg },
+            { name: "SNEHA GUPTA", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759794419/Sneha_Coreteam_Funevents_-_Sneha_Gupta_q3rgom.jpg", bgImg, propImg },
+            
           ]
         },
 

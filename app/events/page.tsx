@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { day } from "../Data/events/events";
 import EventBox from "../../components/events/EventBox";
@@ -9,7 +9,29 @@ import Background from "../../components/events/Background";
 export default function Page() {
   const [activeDay, setActiveDay] = useState(day[0]);
   const [currentPage, setCurrentPage] = useState(0);
-  const eventsPerPage = 4;
+  const [eventsPerPage, setEventsPerPage] = useState(6);
+
+  // Handle responsive events per page
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 1024) {
+        setEventsPerPage(5);
+      } else {
+        setEventsPerPage(6);
+      }
+      // Reset to first page when events per page changes
+      setCurrentPage(0);
+    };
+
+    // Set initial value
+    handleResize();
+
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const allEventsForDay = events[activeDay as "day1" | "day2" | "day3"];
   const totalPages = Math.ceil(allEventsForDay.length / eventsPerPage);
@@ -41,7 +63,7 @@ export default function Page() {
                   className=" cursor-pointer"
                   onClick={() => {
                     setActiveDay(dayName);
-                    setCurrentPage(0);  
+                    setCurrentPage(0);
                   }}
                 >
                   <div className="w-10 h-10 md:w-13 md:h-13 lg:w-16 lg:h-16">
@@ -80,9 +102,13 @@ export default function Page() {
           </div>
 
           <div className="mt-3 flex justify-center lg:mt-4 xl:mt-5">
-            <div className=" grid grid-cols-2 gap-4 md:gap-5 lg:gap-8 min-w-[280px] md:min-w-[320px] lg:min-w-[450px] xl:min-w-[500px]">
+            <div className="flex flex-col gap-2 md:gap-3 lg:gap-3 w-full max-w-[400px] md:max-w-[500px] lg:max-w-[600px] xl:max-w-[700px]">
               {currentEvents.map((event) => (
-                <EventBox key={event.id} title={event.eventName} />
+                <EventBox
+                  key={event.id}
+                  title={event.eventName}
+                  className="events-list"
+                />
               ))}
             </div>
           </div>

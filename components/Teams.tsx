@@ -21,11 +21,11 @@ export default function Teams() {
         </div>
       
       <main className="relative z-10 flex flex-col items-center py-12 px-4 sm:px-8 lg:px-16">
-        <h1 className="text-4xl font-traditional tracking-widest sm:text-5xl md:text-6xl xl:text-7xl text-[#FFD9A4] md:mb-30">
+        <h1 className="text-4xl font-traditional tracking-widest sm:text-5xl md:text-6xl xl:text-7xl text-[#FFD9A4] md:mb-10 lg:mb-5">
           TEAM
         </h1>
 
-        <Section title={teamData.ourPatron.title} members={teamData.ourPatron.members} forcePerView={1} />
+         
 
         <div className="w-full text-center mb-16">
          <h2 className="text-4xl font-traditional sm:text-5xl md:mt-20 md:text-6xl xl:text-7xl text-[#FFD9A4] md:mb-25">
