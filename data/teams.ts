@@ -29,7 +29,7 @@ export function getTeamData() {
   return {
      
     convener: {
-      title: "CONVENER",
+      title: "CONVENOR",
       members: [
         { name: "NILANCHAL NAHAK", description: "WORKING", personImg:"https://res.cloudinary.com/du5qoczcn/image/upload/v1759795453/Nilanchal_Nahak_general_convenor_-_nilanchal_nahak_1_qeg29o.png", bgImg, propImg },
         { name: "CHINMAYA KUMAR NAIK", description: "WORKING", personImg:"https://res.cloudinary.com/du5qoczcn/image/upload/v1759795064/ChinmayaKumarNaik_convener_-_Chinmay_Kumar_Naik_tbmta3.jpg", bgImg, propImg },
@@ -86,7 +86,6 @@ export function getTeamData() {
             { name: "SUDEEP KUMAR SWAIN ", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759585535/1000140697_9000_-_Sudiip_kumar_Swaain_xafmpt.jpg", bgImg, propImg },
             { name: "CHIDAMBAR SWAIN ", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541711/Chidambar_Coreteam_Event_Management_-_Chidambar_Swain_ic6can.jpg", bgImg, propImg },
             { name: "ADITYA PANDA ", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541824/IMG_20240908_021100_-_Aditya_Panda_u5djc7.jpg", bgImg, propImg },
-            { name: "VISHESH JAIN", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759793265/VisheshJain_CoreTeam_EventManagement_-_Vishesh_Jain_osnqcp.jpg", bgImg, propImg },
             
             
             
