@@ -175,6 +175,7 @@ export function getTeamData() {
             { name: "ROHAN PADHY", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541717/20251003_172727_-_Rohan_Padhy_x6zmyn.jpg", bgImg, propImg },
 
             { name: "JAGNYASAI SAHU", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541697/Jagnyasai_Coreteam_Database_-_Jagnyasai_Sahu_mqzrqw.jpg", bgImg, propImg },
+            { name: "LOKESH DASH", description: "WORKING", personImg: "https://res.cloudinary.com/dlp0vynmo/image/upload/v1760084852/lokesh_p7x32i.jpg", bgImg, propImg },
 
           ]
         },
@@ -192,6 +193,7 @@ export function getTeamData() {
           members: [
             { name: "SAHIL KUMAR SUBUDHI", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541761/Sahil_Coreteam_Promotions_and_Outreach_-_Sahil_Kumar_Subudhi_as5fwd.jpg", bgImg, propImg },
             { name: "GOLA SRINIVAS", description: "WORKING", personImg: "https://res.cloudinary.com/du5qoczcn/image/upload/v1759541655/Srinivas_Coreteam_PR_-_GOLA_SRINIVAS_v33ymt.jpg", bgImg, propImg },
+            { name: "OM PRAKASH", description: "WORKING", personImg: "https://res.cloudinary.com/dlp0vynmo/image/upload/c_crop,ar_3:4/v1760084851/omixd_ojfe0x.jpg", bgImg, propImg },
 
           ]
         },

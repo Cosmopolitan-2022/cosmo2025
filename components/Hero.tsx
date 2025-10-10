@@ -40,7 +40,7 @@ function Hero() {
             />
           </div>
 
-          <div className="absolute hidden md:block left-0 md:w-[500px] md:h-[800px] lg:w-[700px] lg:h-[900px] mt-25">
+          <div className="absolute hidden md:block left-0 md:w-[500px] md:h-[800px] lg:w-[700px] lg:h-[900px] ">
             <Image
               src={leftImage}
               alt="Left image"
@@ -61,7 +61,7 @@ function Hero() {
         </div>
 
         <div className="relative z-30 w-full flex flex-col ml-auto pr-0">
-          <div className="w-full text-justify md:pr-12 lg:pr-28">
+          <div className="w-full text-justify md:pr-12 lg:pr-28 ">
             <h1 className="text-5xl lg:right-28 text-[60px] sm:text-[70px] md:text-[80px] xl:text-[145px] font-bold text-[#FFD9A4] text-center md:text-right flex flex-col space-y-5">
               <span className="block font-traditional">
                 {mainText.split(" ")[0]}
